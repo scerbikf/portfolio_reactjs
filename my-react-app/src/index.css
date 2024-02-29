@@ -172,7 +172,7 @@ h1{
   align-items: center;
   width: 100px;
   height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: .4rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px 0;
   font-weight: 600;
