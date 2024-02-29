@@ -1,0 +1,190 @@
+body{
+  background-color: hsl(0, 0%, 90%);
+  margin: 0px;
+  padding: 0px;
+}
+.headerDiv{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  position: fixed;
+  padding: 5px 0;
+  right: 0;
+  left: 0;
+  padding-left: 300px;
+  padding-right: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  transition: all 0.5s;
+}
+.header-scrolled{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.8;
+  padding: 0px 0;
+  background-color: black;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding-left: 300px;
+  padding-right: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  transition: all 0.5s;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+h1{
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  position: relative;
+}
+.navbar>ul>li{
+  white-space: nowrap;
+  padding: 0px 0px 0px 30px;
+}
+.navbar a{
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 80%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeDiv{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("/public/background.png") fixed center no-repeat;
+  background-size: 200vh 100vh;
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.name{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 4.5rem;
+}
+.autoText{
+  font-size: 2.5em;
+  margin-top: 0px;
+}
+.aboutTitleText{ 
+  font-family: serif;
+  font-weight: 400;
+  margin: 60px 0px 0px 0px;
+  font-size: 4em;
+}
+.aboutDiv{
+  font-family: serif;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 150px 150px 150px 150px; 
+  grid-template-areas: 
+  "profile . skillTitle skillTitle"
+  "whoAmI whoAmI skills skills"
+  "aboutMeText aboutMeText . .";
+  height: 600px;
+  width: 1200px;
+  margin: 60px 0px 200px 0px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile{
+  grid-area: profile;
+  margin: 70px 0px 0px 235px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+  transition: all 250ms;
+}
+.profile:hover,
+.profile:focus {
+  box-shadow: rgba(0, 0, 0, 1) 0 4px 12px;
+}
+.whoAmI{
+  grid-area: whoAmI;
+  font-size: 2.5rem;
+  margin: 100px 0px 0px 200px;
+}
+.aboutMeText{
+  grid-area: aboutMeText;
+  font-size: 1.5rem;
+  margin: 30px 0px 0px 70px;
+}
+.skillsTitle{
+  grid-area: skillTitle;
+  font-size: 3rem;
+  margin: 50px 0px 0px 200px;
+}
+.skills{
+  grid-area: skills;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0px 0px 10px;
+  padding: 0;
+  gap: 10px;
+  width: 500px;
+}
+.skillsBtns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px 0;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: all 250ms;
+  cursor: default;
+}
+.skillsBtns:hover,
+.skillsBtns:focus {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+.projectsDiv{
+  height: 100vh;
+  width: 100vh;
+  background-color: rgb(129, 33, 33);
+}
