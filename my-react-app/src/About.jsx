@@ -20,7 +20,7 @@ function About(){
                     <li className="skillsBtns">Git</li>
                 </ul>
                 <p className="aboutMeText">
-                    My name is Barbora. Im a frontend software engineer & freelance web developer from Trebisov, Slovakia.
+                    My name is Filip. Im a frontend software engineer & freelance web developer from Trebisov, Slovakia.
                     I love to improve everyday and collect new experience and skills everywhere i can.
                     Im self-taught programmer with 2 years of learning mainly HTML, CSS, JavaScript and ReactJS.
                 </p>
