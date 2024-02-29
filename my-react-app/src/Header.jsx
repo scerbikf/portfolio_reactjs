@@ -45,7 +45,6 @@ function Header(){
     return(
     <header>
         <div id="header" className="headerDiv">
-            
             <nav id="navbar" className="navbar">
                 <ul>
                 <li><a id="home" className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
