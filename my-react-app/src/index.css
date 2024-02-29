@@ -124,12 +124,12 @@ h1{
   width: 1200px;
   margin: 60px 0px 200px 0px;
   background-color: white;
-  transition: all 250ms;
+  transition: all 0.7s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .aboutDiv:hover,
 .aboutDiv:focus {
-  box-shadow: rgba(0, 0, 0, 1) 0 5px 15px;
+  box-shadow: rgba(0, 0, 0, 1) 0 5px 40px;
 }
 .profile{
   grid-area: profile;
