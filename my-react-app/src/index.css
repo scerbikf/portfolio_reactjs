@@ -117,10 +117,10 @@ h1{
   grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 150px 150px 150px 150px; 
   grid-template-areas: 
-  "profile . skillTitle skillTitle"
-  "whoAmI whoAmI skills skills"
-  "aboutMeText aboutMeText . .";
-  height: 600px;
+  "profile . . ."
+  "whoAmI whoAmI skillTitle skillTitle"
+  "aboutMeText aboutMeText skills skills";
+  height: 580px;
   width: 1200px;
   margin: 60px 0px 200px 0px;
   background-color: white;
@@ -150,9 +150,10 @@ h1{
   margin: 30px 0px 0px 70px;
 }
 .skillsTitle{
+  text-align: center;
   grid-area: skillTitle;
-  font-size: 3rem;
-  margin: 50px 0px 0px 200px;
+  font-size: 2.5rem;
+  margin: 130px 0px 0px 0px;
 }
 .skills{
   grid-area: skills;
@@ -160,7 +161,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 0px 0px 10px;
+  margin: 50px 0px 0px 50px;
   padding: 0;
   gap: 10px;
   width: 500px;
@@ -169,8 +170,8 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: .4rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0 3px 3px 0;
