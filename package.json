@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "classnames": "^2.5.1",
     "react-simple-typewriter": "^5.0.1",
     "react-typed": "^2.0.12",
     "typewriter-effect": "^2.21.0"
