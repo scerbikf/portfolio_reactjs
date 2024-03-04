@@ -8,24 +8,11 @@ function About(){
                 <p className="skillsTitle">Skills</p>
 
                 <div className="skillsDiv">
-                    <p>HTML</p>
-                    <div className="container">
-                        <div className="skills html">90%</div>
-                    </div>
-
-                    <p>CSS</p>
-                    <div className="container">
-                        <div className="skills css">80%</div>
-                    </div>
-
-                    <p>JavaScript</p>
-                    <div className="container">
-                        <div className="skills js">65%</div>
-                    </div>
-
-                    <p>PHP</p>
-                    <div className="container">
-                        <div className="skills php">60%</div>
+                    <div class="container">    
+                        <div class="progress2 progress-moved">
+                            <div class="progress-bar2" >
+                            </div>                       
+                        </div> 
                     </div>
                 </div>
 
