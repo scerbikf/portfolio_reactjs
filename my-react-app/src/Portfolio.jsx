@@ -6,6 +6,7 @@ import Projects from "./Projects.jsx";
 function Portfolio(){
     return(<>
             <Header/>
+            <div className="homeBackground"></div>
             <div className="content">
                 <Home/>
                 <About/>

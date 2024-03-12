@@ -2,6 +2,7 @@ body{
   background-color: hsl(0, 0%, 90%);
   margin: 0px;
   padding: 0px;
+  
 }
 .headerDiv{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +17,7 @@ body{
   align-items: center;
   justify-content: right;
   transition: all 0.5s;
+  z-index: 10;
 }
 .header-scrolled{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,16 +33,25 @@ body{
   align-items: center;
   justify-content: right;
   transition: all 0.5s;
+  z-index: 10;
+}
+.navbar{
+  animation: 2s slide-left;
+  animation-iteration-count: 1;
+}
+@keyframes slide-left {
+  from {
+     margin-right: -1000px;
+  }
+
+  to {
+     margin-right: 0%;
+  }
 }
 a{
   color: #ffffff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
-}
-h1{
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 1px;
 }
 .navbar ul{
   display: flex;
@@ -84,6 +95,14 @@ h1{
   align-items: center;
   justify-content: center;
 }
+.homeBackground{
+  background-color: black;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 200vh;
+}
 .homeDiv{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: url("/public/background.png") fixed center no-repeat;
@@ -95,21 +114,51 @@ h1{
   align-items: center;
   justify-content: center;
   color: white;
+  animation: fadeIn ease 5s;
+  animation-iteration-count: 1;
+  z-index: 1;
 }
+@keyframes fadeIn {
+  0% {
+   opacity: 0;
+   background: url("/public/background.png") fixed center no-repeat;
+   background-size: 200vh 100vh;
+   }
+  100% {
+   opacity: 1;
+   background: url("/public/background.png") fixed center no-repeat;
+   background-size: 200vh 100vh;
+   }
+ }
 .name{
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 4.5rem;
+  font-weight: 600;
+  animation: fadeIn ease 6s;
+  animation-iteration-count: 1;
 }
 .autoText{
   font-size: 2.5em;
   margin-top: 0px;
+  animation: fadeIn ease 6s;
+  animation-iteration-count: 1;
 }
 .aboutTitleText{ 
   font-family: serif;
   font-weight: 400;
   margin: 60px 0px 0px 0px;
   font-size: 4em;
+  visibility: hidden;
+}
+@keyframes slide-left2 {
+  from {
+     margin-right: -2000px;
+  }
+
+  to {
+     margin-right: 0%;
+  }
 }
 .aboutDiv{
   font-family: serif;
@@ -156,18 +205,18 @@ h1{
   margin: 40px 0px 0px 65px;
 }
 .skillsDiv p{
-  margin: 20px 0px 0px 0px;
+  margin: 18px 0px 0px 0px;
 }
 .progress {
   padding: 2px;
-  border-radius: 5px;
+  border-radius: 2px;
   background: rgba(0, 0, 0, 0.25);  
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 .progress-bar2 {
-  height: 15px;
-  border-radius: 5px;
-  background-image: linear-gradient(to right, #212130, #39304A);
+  height: 17px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #141e30    , #243b55 );
   width: 0%;
   transition: 1.5s 0.2s width ease-in-out;
 }

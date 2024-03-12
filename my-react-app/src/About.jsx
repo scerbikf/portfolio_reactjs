@@ -3,6 +3,7 @@ import React, {useEffect, useRef} from "react";
 
 function About(){
 
+    const aboutTitle = useRef(null);
     const barHTML = useRef(null);
     const barCSS = useRef(null);
     const barJS = useRef(null);
@@ -14,9 +15,11 @@ function About(){
 
     useEffect(() => {
 
-        if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA) {
+        if(aboutTitle ,barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA) {
           const active = () => {
             if(window.scrollY > 400){
+                aboutTitle.current.style.visibility = "visible";
+                aboutTitle.current.style.animation = "2s slide-left2";
                 barHTML.current.style.width = "95%"
                 barCSS.current.style.transition = "1.5s 0.4s width ease-in-out"
                 barCSS.current.style.width = "95%"
@@ -39,7 +42,7 @@ function About(){
       },[window.scrollY]);
 
     return(<>
-        <p className="aboutTitleText">About</p>
+        <p ref={aboutTitle} className="aboutTitleText">About</p>
         <div className="aboutDiv">
                 <img src="/public/profile2.jpg" alt="profile" className="profile" />
                 <p className="whoAmI">So, who am I?</p>
