@@ -28,7 +28,7 @@ function About(){
                 barREACT.current.style.transition = "1.5s 0.8s width ease-in-out"
                 barREACT.current.style.width = "85%"
                 barNODE.current.style.transition = "1.5s 1s width ease-in-out"
-                barNODE.current.style.width = "60%"
+                barNODE.current.style.width = "75%"
                 barPHP.current.style.transition = "1.5s 1.2s width ease-in-out"
                 barPHP.current.style.width = "40%"
                 barPYTHON.current.style.transition = "1.5s 1.4s width ease-in-out"
