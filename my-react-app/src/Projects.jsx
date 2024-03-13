@@ -46,11 +46,11 @@ function Projects(){
         className="mySwiper"
       >
         
-         <SwiperSlide>
-         <img src="/public/homePage.PNG" />
+        <SwiperSlide>
+            <img src="/public/portfolio.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+            <img src="/public/stopwatch.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
         <div className="projects"></div>
