@@ -28,7 +28,7 @@ function Projects(){
     return(<>
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
 
-    <div className="projectsDiv">
+    
     <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -73,8 +73,11 @@ function Projects(){
         <SwiperSlide>
         <div className="projects"></div>
         </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
       </Swiper>
-      </div>
+     
   
 
 

@@ -2,7 +2,6 @@ body{
   background-color: hsl(0, 0%, 90%);
   margin: 0px;
   padding: 0px;
-  
 }
 .headerDiv{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -141,7 +140,7 @@ a{
   "aboutMeText aboutMeText skillsDiv skillsDiv";
   height: 580px;
   width: 1200px;
-  margin: 60px 0px 135px 0px;
+  margin: 60px 0px 0px 0px;
   background-color: white;
   transition: all 0.7s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -194,17 +193,9 @@ a{
 .projectsTitleText{ 
   font-family: serif;
   font-weight: 400;
-  margin: 0px 0px 60px 0px;
+  margin: 150px 0px 60px 0px;
   font-size: 4em;
   visibility: hidden;
-}
-.projectsDiv{
-  height: 60vh;
-  width: 1000px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .swiper {
   width: 100%;
@@ -214,8 +205,8 @@ a{
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .swiper-slide img {
   display: block;
