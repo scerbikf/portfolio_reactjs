@@ -1,4 +1,12 @@
 import React, {useEffect, useRef} from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+import './index.css';
+
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 function Projects(){
 
@@ -18,8 +26,63 @@ function Projects(){
       },[window.scrollY]);
 
     return(<>
-    <p ref={projectsTitle} className="projectsTitleText">About</p>
-    <div className="projectsDiv"></div>
+    <p ref={projectsTitle} className="projectsTitleText">Projects</p>
+
+    <div className="projectsDiv">
+    <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        
+         <SwiperSlide>
+         <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="projects"></div>
+        </SwiperSlide>
+      </Swiper>
+      </div>
+  
+
+
+
+
+
+
+   
     </>);
 }
 export default Projects
