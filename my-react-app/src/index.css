@@ -203,8 +203,6 @@ a{
   padding-bottom: 50px;
 }
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
   width: 400px;
   height: 400px;
 }

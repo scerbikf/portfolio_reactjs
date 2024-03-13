@@ -47,7 +47,7 @@ function Projects(){
       >
         
          <SwiperSlide>
-         <div className="projects"></div>
+         <img src="/public/homePage.PNG" />
         </SwiperSlide>
         <SwiperSlide>
         <div className="projects"></div>
