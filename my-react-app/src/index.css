@@ -36,17 +36,8 @@ body{
   z-index: 10;
 }
 .navbar{
-  animation: 2s slide-left;
+  animation: 2s slideLeft;
   animation-iteration-count: 1;
-}
-@keyframes slide-left {
-  from {
-     margin-right: -1000px;
-  }
-
-  to {
-     margin-right: 0%;
-  }
 }
 a{
   color: #ffffff;
@@ -114,34 +105,22 @@ a{
   align-items: center;
   justify-content: center;
   color: white;
-  animation: fadeIn ease 5s;
+  animation: fadeInHome ease 5s;
   animation-iteration-count: 1;
   z-index: 1;
 }
-@keyframes fadeIn {
-  0% {
-   opacity: 0;
-   background: url("/public/background.png") fixed center no-repeat;
-   background-size: 200vh 100vh;
-   }
-  100% {
-   opacity: 1;
-   background: url("/public/background.png") fixed center no-repeat;
-   background-size: 200vh 100vh;
-   }
- }
 .name{
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 4.5rem;
   font-weight: 600;
-  animation: fadeIn ease 6s;
+  animation: fadeInHome ease 6s;
   animation-iteration-count: 1;
 }
 .autoText{
   font-size: 2.5em;
   margin-top: 0px;
-  animation: fadeIn ease 6s;
+  animation: fadeInHome ease 6s;
   animation-iteration-count: 1;
 }
 .aboutTitleText{ 
@@ -150,15 +129,6 @@ a{
   margin: 60px 0px 0px 0px;
   font-size: 4em;
   visibility: hidden;
-}
-@keyframes slide-left2 {
-  from {
-     margin-right: -2000px;
-  }
-
-  to {
-     margin-right: 0%;
-  }
 }
 .aboutDiv{
   font-family: serif;
@@ -171,7 +141,7 @@ a{
   "aboutMeText aboutMeText skillsDiv skillsDiv";
   height: 580px;
   width: 1200px;
-  margin: 60px 0px 200px 0px;
+  margin: 60px 0px 130px 0px;
   background-color: white;
   transition: all 0.7s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -221,8 +191,47 @@ a{
   width: 0%;
   transition: 1.5s 0.2s width ease-in-out;
 }
+.projectsTitleText{ 
+  font-family: serif;
+  font-weight: 400;
+  margin: 0px 0px 60px 0px;
+  font-size: 4em;
+  visibility: hidden;
+}
 .projectsDiv{
   height: 100vh;
   width: 100vh;
   background-color: rgb(129, 33, 33);
+}
+@keyframes fadeInHome {
+  0% {
+   opacity: 0;
+   background: url("/public/background.png") fixed center no-repeat;
+   background-size: 200vh 100vh;
+   }
+  100% {
+   opacity: 1;
+   background: url("/public/background.png") fixed center no-repeat;
+   background-size: 200vh 100vh;
+   }
+ }
+@keyframes slideLeft2 {
+  0% {
+    opacity: 0;
+    margin-right: -1000px;
+    }
+   100% {
+    opacity: 1;
+    margin-right: 0%;
+    }
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    margin-right: -1000px;
+    }
+   100% {
+    opacity: 1;
+    margin-right: 0%;
+    }
 }

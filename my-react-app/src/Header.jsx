@@ -50,8 +50,8 @@ function Header(){
             <nav id="navbar" className="navbar">
                 <ul>
                 <li><a ref={home} id="home" className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
-                <li><a ref={about} id="about" className="nav-link scrollto" onClick={() => window.scrollTo({top: 880, behavior: "smooth"})}>About</a></li>
-                <li><a ref={projects} id="Projects" className="nav-link scrollto" onClick={() => window.scrollTo({top: 1700, behavior: "smooth"})}>Projects</a></li>
+                <li><a ref={about} id="about" className="nav-link scrollto" onClick={() => window.scrollTo({top: 900, behavior: "smooth"})}>About</a></li>
+                <li><a ref={projects} id="Projects" className="nav-link scrollto" onClick={() => window.scrollTo({top: 1750, behavior: "smooth"})}>Projects</a></li>
                 </ul>
             </nav>
         </div>
