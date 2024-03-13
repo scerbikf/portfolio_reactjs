@@ -47,34 +47,37 @@ function Projects(){
       >
         
         <SwiperSlide>
-            <img src="/public/portfolio.PNG"/>
+          <img src="/public/portfolio.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-            <img src="/public/stopwatch.PNG"/>
+          <img src="/public/stopwatch.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/calculator.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/snakegame.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/rockpapersc.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/dicegame.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/digitalclock.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/minigame.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/pingpong.PNG"/>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="projects"></div>
+          <img src="/public/tictactoe.PNG"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/public/tipcalculator.PNG"/>
         </SwiperSlide>
       </Swiper>
      
