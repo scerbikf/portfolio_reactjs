@@ -19,7 +19,8 @@ function About(){
           const active = () => {
             if(window.scrollY > 400){
                 aboutTitle.current.style.visibility = "visible";
-                aboutTitle.current.style.animation = "2s slideLeft2";
+                aboutTitle.current.style.animation = "2s slideLeft";
+                aboutTitle.current.style.animationIterationCount = "1";
                 barHTML.current.style.width = "95%"
                 barCSS.current.style.transition = "1.5s 0.4s width ease-in-out"
                 barCSS.current.style.width = "95%"
