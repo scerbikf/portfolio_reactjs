@@ -177,7 +177,7 @@ a{
 .skillsDiv p{
   margin: 18px 0px 0px 0px;
 }
-.progress {
+.progress{
   padding: 2px;
   border-radius: 2px;
   background: rgba(0, 0, 0, 0.25);  
@@ -200,7 +200,7 @@ a{
 .swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 .swiper-slide {
   width: 400px;
@@ -211,15 +211,40 @@ a{
   width: 100%;
   z-index: 10;
 }
-.projectsNames{
-  text-align: center;
-  visibility: hidden;
-}
 .slideDown{
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
   animation: 1s slideDown;
   animation-iteration-count: 1;
 }
 .slideUp{
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  animation: 1s slideUp;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.iconsDown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 10px 0px 0px 160px;
+  animation: 1s slideDown;
+  animation-iteration-count: 1;
+}
+.iconsUp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 10px 0px 0px 160px;
   animation: 1s slideUp;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -255,15 +280,19 @@ a{
 @keyframes slideDown {
   0% {
     margin-top: -50px;
+    position: relative;
+    z-index: 0;
     }
    100% {
-    margin-top: 20px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 0;
     }
 }
 @keyframes slideUp {
   0% {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     z-index: 0;
     }

@@ -31,7 +31,7 @@ function Projects(){
     return(<>
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
 
-    <div className="projectsNames">
+    
     <Swiper
         ref={mySwiper}
         effect={'coverflow'}
@@ -46,10 +46,28 @@ function Projects(){
       
 
         <SwiperSlide>
-        
           {({ isActive }) => (<>
             <img src="/public/portfolio.PNG"></img>
-            {isActive ? <h1 className="slideDown">Portfolio</h1> : <h1 className="slideUp">Portfolio</h1>}
+            {isActive ?
+            <>
+              <h1 className="slideDown">Portfolio</h1>
+            <div className="iconsDown">
+              <img src="/public/reactIcon.PNG"></img>
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>
+             : 
+             <>
+              <h1 className="slideUp">Portfolio</h1>
+            <div className="iconsUp">
+              <img src="/public/reactIcon.PNG"></img>
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>}
             </>)
             }
         </SwiperSlide>
@@ -114,7 +132,7 @@ function Projects(){
             </>)}
         </SwiperSlide>
     </Swiper>
-    </div>
+   
    
     </>);
 }
