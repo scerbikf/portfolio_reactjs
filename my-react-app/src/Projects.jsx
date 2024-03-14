@@ -44,10 +44,12 @@ function Projects(){
       
 
         <SwiperSlide>
+        
           {({ isActive }) => (<>
             <img src="/public/portfolio.PNG"></img>
             {isActive ? <h1 className="slideDown">Portfolio</h1> : <h1 className="slideUp">Portfolio</h1>}
-            </>)}
+            </>)
+            }
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
