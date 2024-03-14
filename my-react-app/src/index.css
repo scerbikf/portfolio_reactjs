@@ -104,7 +104,7 @@ a{
   align-items: center;
   justify-content: center;
   color: white;
-  animation: fadeInHome ease 5s;
+  animation: fadeInHome ease 8s;
   animation-iteration-count: 1;
   z-index: 1;
 }
@@ -113,13 +113,13 @@ a{
   margin-bottom: 10px;
   font-size: 4.5rem;
   font-weight: 600;
-  animation: fadeInHome ease 6s;
+  animation: fadeInHome ease 9s;
   animation-iteration-count: 1;
 }
 .autoText{
   font-size: 2.5em;
   margin-top: 0px;
-  animation: fadeInHome ease 6s;
+  animation: fadeInHome ease 9s;
   animation-iteration-count: 1;
 }
 .aboutTitleText{ 
@@ -266,7 +266,7 @@ a{
    background: url("/public/background.png") fixed center no-repeat;
    background-size: 200vh 100vh;
    }
-  100% {
+  70% {
    opacity: 1;
    background: url("/public/background.png") fixed center no-repeat;
    background-size: 200vh 100vh;
