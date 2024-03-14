@@ -45,131 +45,108 @@ function Projects(){
       
 
         <SwiperSlide>
-        {({ isActive }) => 
-        (<>
-            {isActive ?
-           
-            <Slide name="Portfolio" nameClass="slideDown" iconClass="iconsDown" imgName="/public/portfolio.PNG"></Slide>
-             : 
-             <Slide name="Portfolio" nameClass="slideUp" iconClass="iconsUp" imgName="/public/portfolio.PNG"></Slide>
-            }
-        </>)
-            }
-        </SwiperSlide>
-
-        <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/todolist.PNG"></img>
-            {isActive ? <h1 className="slideDown">To-Do List App</h1> : <h1 className="slideUp">To-Do List App</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Portfolio" nameClass="slideDown" iconClass="iconsDown" imgName="/public/portfolio.PNG"></Slide>
+                : 
+                <Slide name="Portfolio" nameClass="slideUp" iconClass="iconsUp" imgName="/public/portfolio.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            
-            
-            {isActive ?
-            <>
-            <img src="/public/stopwatch.PNG"></img>
-              <h1 className="slideDown">Stopwatch Program</h1>
-            <div className="iconsDown">
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>
-             : 
-             <>
-             <img src="/public/stopwatch.PNG"></img>
-              <h1 className="slideUp">Stopwatch Program</h1>
-            <div className="iconsUp">
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>}
-            </>)
-            }
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="To-Do List App" nameClass="slideDown" iconClass="iconsDown" imgName="/public/todolist.PNG"></Slide>
+                : 
+                <Slide name="To-Do List App" nameClass="slideUp" iconClass="iconsUp" imgName="/public/todolist.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/digitalclock.PNG"></img>
-            {isActive ? <h1 className="slideDown">Digital Clock</h1> : <h1 className="slideUp">Digital Clock</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Stopwatch Program" nameClass="slideDown" iconClass="iconsDown" imgName="/public/stopwatch.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Stopwatch Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/stopwatch.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            
-            
-            {isActive ?
-            <>
-            <img src="/public/calculator.PNG"></img>
-              <h1 className="slideDown">Calculator Program</h1>
-            <div className="iconsDown">
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>
-             : 
-             <>
-             <img src="/public/calculator.PNG"></img>
-              <h1 className="slideUp">Calculator Program</h1>
-            <div className="iconsUp">
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>}
-            </>)
-            }
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Digital Clock" nameClass="slideDown" iconClass="iconsDown" imgName="/public/digitalclock.PNG"></Slide>
+                : 
+                <Slide name="Digital Clock" nameClass="slideUp" iconClass="iconsUp" imgName="/public/digitalclock.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-          <img src="/public/snakegame.PNG"/>
-            {isActive ? <h1 className="slideDown">Snake Game</h1> : <h1 className="slideUp">Snake Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Calculator Program" nameClass="slideDown" iconClass="iconsDown" imgName="/public/calculator.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Calculator Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/calculator.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-          <img src="/public/rockpapersc.PNG"/>
-            {isActive ? <h1 className="slideDown">Rock Paper Scissors Game</h1> : <h1 className="slideUp">Rock Paper Scissors Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Snake Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/snakegame.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Snake Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/snakegame.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/dicegame.PNG"></img>
-            {isActive ? <h1 className="slideDown">Dice Game</h1> : <h1 className="slideUp">Dice Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Rock Paper Scissors Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/rockpapersc.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Rock Paper Scissors Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/rockpapersc.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/minigame.PNG"></img>
-            {isActive ? <h1 className="slideDown">Encryption Game</h1> : <h1 className="slideUp">Encryption Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Dice Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/dicegame.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Dice Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/dicegame.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/pingpong.PNG"></img>
-            {isActive ? <h1 className="slideDown">PingPong Game</h1> : <h1 className="slideUp">PingPong Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Encryption Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/minigame.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Encryption Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/minigame.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/tictactoe.PNG"></img>
-            {isActive ? <h1 className="slideDown">TicTacToe Game</h1> : <h1 className="slideUp">TicTacToe Game</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="PingPong Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/pingpong.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="PingPong Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/pingpong.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/tipcalculator.PNG"></img>
-            {isActive ? <h1 className="slideDown">Tip Calculator</h1> : <h1 className="slideUp">Tip Calculator</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="TicTacToe Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/tictactoe.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="TicTacToe Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tictactoe.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
         <SwiperSlide>
-        {({ isActive }) => (<>
-            <img src="/public/colorpicker.PNG"></img>
-            {isActive ? <h1 className="slideDown">Color Picker</h1> : <h1 className="slideUp">Color Picker</h1>}
-            </>)}
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Tip Calculator" nameClass="slideDown" iconClass="iconsDown" imgName="/public/tipcalculator.PNG" react={"none"}></Slide>
+                : 
+                <Slide name="Tip Calculator" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tipcalculator.PNG"></Slide>
+            }</>)}
+        </SwiperSlide>
+        <SwiperSlide>
+            {({ isActive }) => (<>
+              {isActive ?
+                <Slide name="Color Picker" nameClass="slideDown" iconClass="iconsDown" imgName="/public/colorpicker.PNG"></Slide>
+                : 
+                <Slide name="Color Picker" nameClass="slideUp" iconClass="iconsUp" imgName="/public/colorpicker.PNG"></Slide>
+            }</>)}
         </SwiperSlide>
     </Swiper>
    
