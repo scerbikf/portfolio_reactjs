@@ -65,7 +65,7 @@ function Projects(){
               {isActive ?
                 <Slide name="Stopwatch Program" nameClass="slideDown" iconClass="iconsDown" imgName="/public/stopwatch.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Stopwatch Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/stopwatch.PNG"></Slide>
+                <Slide name="Stopwatch Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/stopwatch.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -81,7 +81,7 @@ function Projects(){
               {isActive ?
                 <Slide name="Calculator Program" nameClass="slideDown" iconClass="iconsDown" imgName="/public/calculator.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Calculator Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/calculator.PNG"></Slide>
+                <Slide name="Calculator Program" nameClass="slideUp" iconClass="iconsUp" imgName="/public/calculator.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -89,15 +89,15 @@ function Projects(){
               {isActive ?
                 <Slide name="Snake Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/snakegame.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Snake Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/snakegame.PNG"></Slide>
+                <Slide name="Snake Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/snakegame.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
             {({ isActive }) => (<>
               {isActive ?
-                <Slide name="Rock Paper Scissors Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/rockpapersc.PNG" react={"none"}></Slide>
+                <Slide name="Rock Paper Scissors" nameClass="slideDown" iconClass="iconsDown" imgName="/public/rockpapersc.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Rock Paper Scissors Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/rockpapersc.PNG"></Slide>
+                <Slide name="Rock Paper Scissors" nameClass="slideUp" iconClass="iconsUp" imgName="/public/rockpapersc.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -105,7 +105,7 @@ function Projects(){
               {isActive ?
                 <Slide name="Dice Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/dicegame.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Dice Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/dicegame.PNG"></Slide>
+                <Slide name="Dice Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/dicegame.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -113,7 +113,7 @@ function Projects(){
               {isActive ?
                 <Slide name="Encryption Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/minigame.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Encryption Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/minigame.PNG"></Slide>
+                <Slide name="Encryption Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/minigame.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -121,7 +121,7 @@ function Projects(){
               {isActive ?
                 <Slide name="PingPong Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/pingpong.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="PingPong Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/pingpong.PNG"></Slide>
+                <Slide name="PingPong Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/pingpong.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -129,7 +129,7 @@ function Projects(){
               {isActive ?
                 <Slide name="TicTacToe Game" nameClass="slideDown" iconClass="iconsDown" imgName="/public/tictactoe.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="TicTacToe Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tictactoe.PNG"></Slide>
+                <Slide name="TicTacToe Game" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tictactoe.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
@@ -137,7 +137,7 @@ function Projects(){
               {isActive ?
                 <Slide name="Tip Calculator" nameClass="slideDown" iconClass="iconsDown" imgName="/public/tipcalculator.PNG" react={"none"}></Slide>
                 : 
-                <Slide name="Tip Calculator" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tipcalculator.PNG"></Slide>
+                <Slide name="Tip Calculator" nameClass="slideUp" iconClass="iconsUp" imgName="/public/tipcalculator.PNG" react={"none"}></Slide>
             }</>)}
         </SwiperSlide>
         <SwiperSlide>
