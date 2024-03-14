@@ -17,8 +17,10 @@ function Projects(){
             if(window.scrollY > 1300){
                 projectsTitle.current.style.visibility = "visible";
                 projectsTitle.current.style.animation = "2s slideLeft2";
+                projectsTitle.current.style.animationIterationCount = "1";
                 mySwiper.current.style.visibility = "visible";
                 mySwiper.current.style.animation = "2s slideLeft2";
+                mySwiper.current.style.animationIterationCount = "1";
             }
           }
           window.addEventListener("scroll", active)

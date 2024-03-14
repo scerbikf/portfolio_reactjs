@@ -217,10 +217,12 @@ a{
 }
 .slideDown{
   animation: 1s slideDown;
+  animation-iteration-count: 1;
 }
 .slideUp{
   animation: 1s slideUp;
   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 .contactDiv{
   height: 100vh;
