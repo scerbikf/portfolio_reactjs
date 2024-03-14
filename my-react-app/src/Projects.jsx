@@ -47,9 +47,10 @@ function Projects(){
 
         <SwiperSlide>
           {({ isActive }) => (<>
-            <img src="/public/portfolio.PNG"></img>
+            
             {isActive ?
             <>
+            <img src="/public/portfolio.PNG"></img>
               <h1 className="slideDown">Portfolio</h1>
             <div className="iconsDown">
               <img src="/public/reactIcon.PNG"></img>
@@ -60,6 +61,7 @@ function Projects(){
             </>
              : 
              <>
+             <img src="/public/portfolio.PNG"></img>
               <h1 className="slideUp">Portfolio</h1>
             <div className="iconsUp">
               <img src="/public/reactIcon.PNG"></img>
@@ -73,15 +75,57 @@ function Projects(){
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
-            <img src="/public/stopwatch.PNG"/>
-            {isActive ? <h1 className="slideDown">Stopwatch Program</h1> : <h1 className="slideUp">Stopwatch Program</h1>}
-            </>)}
+            
+            
+            {isActive ?
+            <>
+            <img src="/public/stopwatch.PNG"></img>
+              <h1 className="slideDown">Stopwatch Program</h1>
+            <div className="iconsDown">
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>
+             : 
+             <>
+             <img src="/public/stopwatch.PNG"></img>
+              <h1 className="slideUp">Stopwatch Program</h1>
+            <div className="iconsUp">
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>}
+            </>)
+            }
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
-          <img src="/public/calculator.PNG"/>
-            {isActive ? <h1 className="slideDown">Calculator Program</h1> : <h1 className="slideUp">Calculator Program</h1>}
-            </>)}
+            
+            
+            {isActive ?
+            <>
+            <img src="/public/calculator.PNG"></img>
+              <h1 className="slideDown">Calculator Program</h1>
+            <div className="iconsDown">
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>
+             : 
+             <>
+             <img src="/public/calculator.PNG"></img>
+              <h1 className="slideUp">Calculator Program</h1>
+            <div className="iconsUp">
+              <img src="/public/javascriptIcon.PNG"></img>
+              <img src="/public/htmlIcon.PNG"></img>
+              <img src="/public/cssIcon.PNG"></img>
+            </div>
+            </>}
+            </>)
+            }
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
