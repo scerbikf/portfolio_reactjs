@@ -1,9 +1,10 @@
 import React, {useEffect, useRef} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Slide from "./ProjectProp.jsx";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
 function Projects(){
 
@@ -33,6 +34,7 @@ function Projects(){
     
     <Swiper
         ref={mySwiper}
+        spaceBetween={70}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
@@ -40,10 +42,9 @@ function Projects(){
         coverflowEffect={{
           rotate: 50,
         }}
-        modules={[EffectCoverflow]}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Navigation, Pagination]}
       >
-      
-
         <SwiperSlide>
             {({ isActive }) => (<>
               {isActive ?
