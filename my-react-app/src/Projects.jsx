@@ -1,9 +1,9 @@
 import React, {useEffect, useRef} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow } from 'swiper/modules';
+import Slide from "./ProjectProp.jsx";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-
-import { EffectCoverflow } from 'swiper/modules';
 
 function Projects(){
 
@@ -27,7 +27,6 @@ function Projects(){
         }
       },[window.scrollY]);
 
-      
     return(<>
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
 
@@ -46,32 +45,23 @@ function Projects(){
       
 
         <SwiperSlide>
-          {({ isActive }) => (<>
-            
+        {({ isActive }) => 
+        (<>
             {isActive ?
-            <>
-            <img src="/public/portfolio.PNG"></img>
-              <h1 className="slideDown">Portfolio</h1>
-            <div className="iconsDown">
-              <img src="/public/reactIcon.PNG"></img>
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>
+           
+            <Slide name="Portfolio" nameClass="slideDown" iconClass="iconsDown" imgName="/public/portfolio.PNG"></Slide>
              : 
-             <>
-             <img src="/public/portfolio.PNG"></img>
-              <h1 className="slideUp">Portfolio</h1>
-            <div className="iconsUp">
-              <img src="/public/reactIcon.PNG"></img>
-              <img src="/public/javascriptIcon.PNG"></img>
-              <img src="/public/htmlIcon.PNG"></img>
-              <img src="/public/cssIcon.PNG"></img>
-            </div>
-            </>}
-            </>)
+             <Slide name="Portfolio" nameClass="slideUp" iconClass="iconsUp" imgName="/public/portfolio.PNG"></Slide>
             }
+        </>)
+            }
+        </SwiperSlide>
+
+        <SwiperSlide>
+        {({ isActive }) => (<>
+            <img src="/public/todolist.PNG"></img>
+            {isActive ? <h1 className="slideDown">To-Do List App</h1> : <h1 className="slideUp">To-Do List App</h1>}
+            </>)}
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
@@ -99,6 +89,12 @@ function Projects(){
             </>}
             </>)
             }
+        </SwiperSlide>
+        <SwiperSlide>
+        {({ isActive }) => (<>
+            <img src="/public/digitalclock.PNG"></img>
+            {isActive ? <h1 className="slideDown">Digital Clock</h1> : <h1 className="slideUp">Digital Clock</h1>}
+            </>)}
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
@@ -147,12 +143,6 @@ function Projects(){
         </SwiperSlide>
         <SwiperSlide>
         {({ isActive }) => (<>
-            <img src="/public/digitalclock.PNG"></img>
-            {isActive ? <h1 className="slideDown">Digital Clock</h1> : <h1 className="slideUp">Digital Clock</h1>}
-            </>)}
-        </SwiperSlide>
-        <SwiperSlide>
-        {({ isActive }) => (<>
             <img src="/public/minigame.PNG"></img>
             {isActive ? <h1 className="slideDown">Encryption Game</h1> : <h1 className="slideUp">Encryption Game</h1>}
             </>)}
@@ -173,6 +163,12 @@ function Projects(){
         {({ isActive }) => (<>
             <img src="/public/tipcalculator.PNG"></img>
             {isActive ? <h1 className="slideDown">Tip Calculator</h1> : <h1 className="slideUp">Tip Calculator</h1>}
+            </>)}
+        </SwiperSlide>
+        <SwiperSlide>
+        {({ isActive }) => (<>
+            <img src="/public/colorpicker.PNG"></img>
+            {isActive ? <h1 className="slideDown">Color Picker</h1> : <h1 className="slideUp">Color Picker</h1>}
             </>)}
         </SwiperSlide>
     </Swiper>
