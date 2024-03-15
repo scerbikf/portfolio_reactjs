@@ -43,7 +43,7 @@ function Projects(){
           rotate: 50,
         }}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Navigation, Pagination]}
+        modules={[EffectCoverflow, Pagination]}
       >
         <SwiperSlide>
             {({ isActive }) => (<>

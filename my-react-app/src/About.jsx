@@ -91,9 +91,9 @@ function About(){
                 </div>
 
                 <p className="aboutMeText">
-                    My name is Filip Scerbik. Im a frontend software engineer & freelance web developer from Trebisov, Slovakia.
+                    My name is Filip Ščerbík. Im a frontend & freelance web developer from Trebisov, Slovakia.
                     I love to improve everyday and collect new experience and skills everywhere i can.
-                    Im self-taught programmer with 2 years of learning mainly HTML, CSS, JavaScript and ReactJS.
+                    Im self-taught programmer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
                 </p>
         </div>
         </>);

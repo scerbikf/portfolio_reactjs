@@ -6,12 +6,12 @@ function Home(){
                 <h1 className="name">I am Filip Ščerbík</h1>
                 <h1 className="autoText">
                 <Typewriter
-                words={['Freelancer', 'Frontend', 'Developer']}
+                words={['Freelancer', 'Frontend Developer']}
                 loop={false}
                 cursor
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={600}
             /></h1>
         </div>);
 }
