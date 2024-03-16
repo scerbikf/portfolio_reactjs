@@ -6,6 +6,7 @@ function Header(){
   const home = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
+  const contact = useRef(null);
 
   useEffect(() => {
     if (selectHeader) {
@@ -22,22 +23,31 @@ function Header(){
 
   useEffect(() => {
     
-    if (home, about, projects) {
+    if (home, about, projects, contact) {
       const active = () => {
         if (window.scrollY < 700){
           home.current.classList.add("active")
           about.current.classList.remove("active")
           projects.current.classList.remove("active")
+          contact.current.classList.remove("active")
         }
         else if(window.scrollY > 700 && window.scrollY < 1500){
           about.current.classList.add("active")
           home.current.classList.remove("active")
           projects.current.classList.remove("active")
+          contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 1500){
+        else if(window.scrollY > 1500 && window.scrollY < 2300){
           projects.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
+          contact.current.classList.remove("active")
+        }
+        else if(window.scrollY > 2300){
+          contact.current.classList.add("active")
+          home.current.classList.remove("active")
+          about.current.classList.remove("active")
+          projects.current.classList.remove("active")
         }
       }
       document.addEventListener("scroll", active)
@@ -49,9 +59,10 @@ function Header(){
         <div ref={selectHeader} id="header" className="headerDiv">
             <nav id="navbar" className="navbar">
                 <ul>
-                <li><a ref={home} id="home" className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
-                <li><a ref={about} id="about" className="nav-link scrollto" onClick={() => window.scrollTo({top: 900, behavior: "smooth"})}>About</a></li>
-                <li><a ref={projects} id="Projects" className="nav-link scrollto" onClick={() => window.scrollTo({top: 1750, behavior: "smooth"})}>Projects</a></li>
+                <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
+                <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 900, behavior: "smooth"})}>About</a></li>
+                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1750, behavior: "smooth"})}>Projects</a></li>
+                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2350, behavior: "smooth"})}>Contact</a></li>
                 </ul>
             </nav>
         </div>
