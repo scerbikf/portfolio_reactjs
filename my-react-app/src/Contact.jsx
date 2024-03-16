@@ -1,22 +1,41 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function Contact(){
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_m4od11t',
+       'template_rp6n3nb',
+        form.current, {
+        publicKey: 'hQBxcvV88KKAAxJfY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
     return(<div className="contactDiv">
             <p className="contactTitle">Contact</p>
             <p className="contactText">Have a question or want to work together?</p>
             <div className="formDiv">
-                <form className="contactForm" method="post">
-                    <label className="contactLabels" for="name">Name</label><br/>
-                    <input className="contactInputs" type="text" id="name" name="name" required></input>
-                    <br/>
-                    <label className="contactLabels" for="email">Email</label><br/>
-                    <input className="contactInputs" type="email" id="email" name="email" required></input>
-                    <br/>
-                    <label className="contactLabels" for="message">Message</label><br/>
-                    <textarea className="contactInputs" id="message" name="message" required style={{minHeight:"80px"}}></textarea>
-                    <br/>
-                    <input className="submitButton" type="submit" value="Send"></input>
-                </form>
+              <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+              </form>
             </div>
         </div>);
 }
