@@ -286,13 +286,14 @@ a{
 .formDiv{
   grid-area: formDiv;
   font-size: 2rem;
-}
-.contactForm{
-  margin: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 40px;
 }
 .contactInputs{
-  height: 40px;
-  width: 500px;
+  min-height: 40px;
+  min-width: 600px;
+}
+.formDiv label{
+  font-size: 25px;
 }
 @keyframes fadeInHome {
   0% {

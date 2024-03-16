@@ -29,12 +29,15 @@ const Contact = () => {
             <div className="formDiv">
               <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
-                <input type="text" name="user_name" />
+                <input type="text" name="user_name" className="contactInputs"/>
+                <br/>
                 <label>Email</label>
-                <input type="email" name="user_email" />
+                <input type="email" name="user_email" className="contactInputs"/>
+                <br/>
                 <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <textarea name="message" className="contactInputs" style={{minHeight:"80px"}}/>
+                <br/>
+                <input type="submit" value="Send"/>
               </form>
             </div>
         </div>);
