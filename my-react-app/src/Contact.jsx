@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { HiOutlineMail } from "react-icons/hi";
 
-const Contact = () => {
+function Contact(){
 
   const form = useRef();
   const submitBtn = useRef();
@@ -41,18 +41,22 @@ const Contact = () => {
             }
           }
     
-    return(<div className="contactDiv">
-            <p className="contactTitle">Contact</p>
-            <p className="contactText">Have a question or want to work together?</p>
+    return(<>
+    <p className="contactTitle">Contact</p>
+    <div className="contactDiv">
             <div className="formDiv">
+            <p className="contactText">Have a question or want to work together?</p>
               <form ref={form} onSubmit={checkBtn}>
                 <label>Name</label>
-                <input type="text" name="user_name" className="contactInputs"/>
+                <input type="text" name="user_name" className="contactInputs" required/>
+                <br/>
                 <label>Email</label>
-                <input type="email" name="user_email" className="contactInputs"/>
+                <input type="email" name="user_email" className="contactInputs" required/>
+                <br/>
                 <label>Message</label>
-                <textarea name="message" className="contactInputs" style={{minHeight:"80px"}}/>
-                <div className="contactRightSide">
+                <textarea name="message" className="contactInputs" style={{minHeight:"80px"}} required/>
+                <br/>
+                <div className="contactItems">
                   <a className="mailIcon" href="mailto:filipscerbik@gmail.com"><HiOutlineMail /></a>
                   <a className="mailText" href="mailto:filipscerbik@gmail.com">filipscerbik@gmail.com</a>
                   <button className="submitBtn" ref={submitBtn}>  
@@ -66,6 +70,6 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-        </div>);
-}
+        </div>
+        </>)}
 export default Contact

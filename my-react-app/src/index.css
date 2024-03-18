@@ -200,7 +200,7 @@ a{
 .swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
   visibility: hidden;
 }
 .swiper-slide {
@@ -261,42 +261,35 @@ a{
 }
 .contactDiv{
   font-family: serif;
-  display: grid;
-  grid-template-columns: 325px 325px 325px 325px;
-  grid-template-rows: 150px 150px 150px 150px; 
-  grid-template-areas: 
-  "contactTitle contactTitle formDiv formDiv"
-  "contactTitle contactTitle formDiv formDiv"
-  "contactText contactText formDiv formDiv"
-  "contactText contactText formDiv formDiv";
-  height: 580px;
-  width: 1300px;;
-  margin: 200px 0px 300px 0px;
+  height: 240px;
+  width: 650px;;
+  margin: 0px 0px 275px 0px;
 }
 .contactTitle{
-  grid-area: contactTitle;
-  font-size: 3rem;
-  margin: 200px 0px 0px 150px;
+  font-family: serif;
+  font-weight: 400;
+  font-size: 4rem;
+  margin: 150px 0px 0px 0px;
 }
 .contactText{
-  grid-area: contactText;
+  height: 30px;
+  text-align: center;
   font-size: 1.5rem;
-  margin: 0px 0px 0px 150px;
+  margin: 50px 0px 0px 0px;
 }
 .formDiv{
-  grid-area: formDiv;
   font-size: 2rem;
-  margin: 150px 0px 0px 40px;
+  margin: 0px 0px 200px 25px;
 }
 .contactInputs{
   min-height: 40px;
   min-width: 600px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .formDiv label{
   font-size: 25px;
 }
-.contactRightSide{
+.contactItems{
   display: flex;
 }
 .mailIcon{
@@ -367,6 +360,178 @@ a{
 .submitBtn.activeBtn span{
   opacity: 0;
   visibility: hidden;
+}
+.footerDiv{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 5px;
+  margin-top: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+}
+.button-57 span:first-child {
+  transition: color 600ms black;
+}
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: relative;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+ 
+}
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+.iconsList {
+  grid-area: iconsList;
+  margin: 60px 0px 0px 0px;
+  padding:0px;
+  display:flex;
+}
+.iconsList li {
+  list-style:none;
+}
+.iconsList li a {
+  display:block;
+  position:relative;
+  width:50px;
+  height:50px;
+  line-height:60px;
+  font-size:30px;
+  text-align:center;
+  text-decoration:none;
+  color:#404040;
+  margin: 0 30px;
+  transition:.5s;
+}
+.iconsList li a span {
+  position:absolute;
+  transition: transform .5s;
+}
+.iconsList li a span:nth-child(1),
+.iconsList li a span:nth-child(3){
+  width:100%;
+  height:3px;
+  background:#404040;
+}
+.iconsList li a span:nth-child(1) {
+  top:0;
+  left:0;
+  transform-origin: right;
+}
+.iconsList li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform .5s;
+}
+
+.iconsList li a span:nth-child(3) {
+  bottom:0;
+  left:0;
+  transform-origin: left;
+}
+.iconsList li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition:transform .5s;
+}
+
+.iconsList li a span:nth-child(2),
+.iconsList li a span:nth-child(4){
+  width:3px;
+  height:100%;
+  background:#404040;
+}
+.iconsList li a span:nth-child(2) {
+  top:0;
+  left:0;
+  transform:scale(0);
+  transform-origin: bottom;
+}
+.iconsList li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition:transform .5s;
+}
+.iconsList li a span:nth-child(4) {
+  top:0;
+  right:0;
+  transform:scale(0);
+  transform-origin: top;
+}
+.iconsList li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition:transform .5s;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+.facebook:hover span { 
+  background: #3b5998;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.twitter:hover span { 
+  background: #1da1f2;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.instagram:hover span { 
+  background: #c32aa3;
+}
+.google:hover {
+  color: #dd4b39;
+}
+.google:hover span { 
+  background: #dd4b39;
+}
+.iconsList li a .twitter {
+  color: #1da1f2;
+}
+.iconsList li a:hover:nth-child(3) {
+  color: #c32aa3;
+}
+.iconsList li a:hover:nth-child(4) {
+  color: #dd4b39;
 }
 @keyframes fadeInHome {
   0% {

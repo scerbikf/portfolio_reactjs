@@ -25,25 +25,25 @@ function Header(){
     
     if (home, about, projects, contact) {
       const active = () => {
-        if (window.scrollY < 700){
+        if (window.scrollY < 500){
           home.current.classList.add("active")
           about.current.classList.remove("active")
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 700 && window.scrollY < 1500){
+        else if(window.scrollY > 500 && window.scrollY < 1400){
           about.current.classList.add("active")
           home.current.classList.remove("active")
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 1500 && window.scrollY < 2300){
+        else if(window.scrollY > 1400 && window.scrollY < 2330){
           projects.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 2300){
+        else if(window.scrollY > 2330){
           contact.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
@@ -62,7 +62,7 @@ function Header(){
                 <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
                 <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 900, behavior: "smooth"})}>About</a></li>
                 <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1750, behavior: "smooth"})}>Projects</a></li>
-                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2350, behavior: "smooth"})}>Contact</a></li>
+                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2580, behavior: "smooth"})}>Contact</a></li>
                 </ul>
             </nav>
         </div>
