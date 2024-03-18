@@ -204,8 +204,8 @@ a{
   visibility: hidden;
 }
 .swiper-slide {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 .swiper-slide img {
@@ -218,7 +218,7 @@ a{
   border-radius: 10px;
 }
 .slideDown{
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   margin: 10px 0px 0px 0px;
   text-align: center;
@@ -227,7 +227,7 @@ a{
   animation-iteration-count: 1;
 }
 .slideUp{
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   margin: 10px 0px 0px 0px;
   text-align: center;
@@ -240,9 +240,9 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
-  margin: 10px 0px 0px 160px;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 0px;
   animation: 1s slideLeft2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -252,9 +252,9 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
-  margin: 10px 0px 0px 160px;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 0px;
   animation: 1s slideRight2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -419,15 +419,15 @@ a{
 @keyframes slideLeft2 {
   0% {
     opacity: 1;
-    margin-top: -240px;
+    margin-top: -180px;
     margin-left: 0px;
     position: relative;
     z-index: 0;
     }
    100% {
     opacity: 1;
-    margin-top: -300px;
     margin-left: -80px;
+    margin-top: -240px;
     position: relative;
     z-index: 0;
     }
@@ -435,15 +435,15 @@ a{
 @keyframes slideRight2 {
   0% {
     opacity: 1;
-    margin-top: -300px;
+    margin-top: -240px;
     margin-left: -80px;
     position: relative;
     z-index: 0;
     }
    100% {
     opacity: 1;
-    margin-top: -240px;
     margin-left: 0px;
+    margin-top: -180px;
     position: relative;
     z-index: 0;
     }
