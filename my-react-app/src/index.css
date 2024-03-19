@@ -1,5 +1,4 @@
 body{
-  background-color: hsl(0, 0%, 90%);
   margin: 0px;
   padding: 0px;
 }
@@ -122,60 +121,62 @@ a{
   animation: fadeInHome ease 9s;
   animation-iteration-count: 1;
 }
-.aboutTitleText{ 
-  font-family: serif;
-  font-weight: 400;
-  margin: 60px 0px 0px 0px;
-  font-size: 4em;
-  visibility: hidden;
-}
 .aboutDiv{
   font-family: serif;
   display: grid;
-  grid-template-columns: 325px 325px 325px 325px;
-  grid-template-rows: 150px 150px 150px 150px; 
-  grid-template-areas: 
-  "profile . skillsDiv skillsDiv"
-  "whoAmI whoAmI skillsDiv skillsDiv"
-  "aboutMeText aboutMeText skillsDiv skillsDiv";
-  height: 580px;
-  width: 1300px;
-  margin: 60px 0px 0px 0px;
+  grid-template-columns: repeat(2, 1fr 1.5fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+  "aboutTitleText aboutTitleText aboutTitleText aboutTitleText" 
+  ". profile skillsDiv skillsDiv"
+  ". aboutText skillsDiv skillsDiv"
+  ". aboutText skillsDiv skillsDiv";
+  height: 960px;
+  width: 1920px;
+  margin: 0px 0px 0px 0px;
   background-color: white;
   transition: all 0.7s;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.aboutDiv:hover,
-.aboutDiv:focus {
-  box-shadow: rgba(0, 0, 0, 1) 0 5px 40px;
+.aboutTitleText{ 
+  grid-area: aboutTitleText;
+  text-align: center;
+  font-family: serif;
+  font-weight: 400;
+  margin: 100px 0px 0px 0px;
+  font-size: 4em;
+  visibility: hidden;
 }
 .profile{
   grid-area: profile;
-  margin: 70px 0px 0px 235px;
-  width: 150px;
-  height: 150px;
+  place-items: center;
+  margin: 70px auto 0px auto;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
 }
+.aboutText{
+  grid-area: aboutText;
+  margin-top: 30px;
+}
 .whoAmI{
-  grid-area: whoAmI;
-  font-size: 2.5rem;
-  margin: 100px 0px 0px 200px;
+  text-align: center;
+  font-size: 3rem;
+  margin: 0px 0px 0px 0px;
 }
 .aboutMeText{
-  grid-area: aboutMeText;
   font-size: 1.5rem;
-  margin: 30px 0px 0px 70px;
+  margin: 40px 0px 0px 0px;
 }
 .skillsDiv{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   grid-area: skillsDiv;
   width: 450px;
   text-align: left;
-  margin: 40px 0px 0px 65px;
+  margin: 50px 0px 0px 100px;
 }
 .skillsDiv p{
-  margin: 18px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 .progress{
   padding: 2px;
@@ -184,18 +185,24 @@ a{
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 .progress-bar2 {
-  height: 17px;
+  height: 25px;
   border-radius: 2px;
   background-image: linear-gradient(to right, #141e30    , #243b55 );
   width: 0%;
   transition: 1.5s 0.2s width ease-in-out;
 }
+.projectsDiv{
+  height: 960px;
+  width: 1920px;
+  background-color: rgba(0, 0, 0, 0.295);
+}
 .projectsTitleText{ 
   font-family: serif;
   font-weight: 400;
-  margin: 150px 0px 60px 0px;
+  margin: 100px 0px 100px 0px;
   font-size: 4em;
   visibility: hidden;
+  text-align: center;
 }
 .swiper {
   width: 100%;
@@ -261,30 +268,33 @@ a{
 }
 .contactDiv{
   font-family: serif;
-  height: 240px;
-  width: 650px;;
-  margin: 0px 0px 275px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 710px;
+  width: 1920px;
+  margin: 0px 0px 0px 0px;
 }
 .contactTitle{
   font-family: serif;
   font-weight: 400;
   font-size: 4rem;
-  margin: 150px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
 }
 .contactText{
   height: 30px;
   text-align: center;
   font-size: 1.5rem;
-  margin: 50px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 .formDiv{
   font-size: 2rem;
-  margin: 0px 0px 200px 25px;
+  margin: 20px 0px 0px 0px;
 }
 .contactInputs{
   min-height: 40px;
   min-width: 600px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .formDiv label{
   font-size: 25px;
@@ -363,7 +373,7 @@ a{
 }
 .footerDiv{
   text-align: center;
-  margin-bottom: 20px;
+  height: 228px;
 }
 .button-57 {
   position: relative;

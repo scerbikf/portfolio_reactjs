@@ -42,20 +42,23 @@ function Contact(){
           }
     
     return(<>
-    <p className="contactTitle">Contact</p>
     <div className="contactDiv">
-            <div className="formDiv">
+            <p className="contactTitle">Contact</p>
             <p className="contactText">Have a question or want to work together?</p>
+            <div className="formDiv">
               <form ref={form} onSubmit={checkBtn}>
-                <label>Name</label>
+                <div>
+                <label>Name</label><br/>
                 <input type="text" name="user_name" className="contactInputs" required/>
-                <br/>
-                <label>Email</label>
+                </div>
+                <div>
+                <label>Email</label><br/>
                 <input type="email" name="user_email" className="contactInputs" required/>
-                <br/>
-                <label>Message</label>
+                </div>
+                <div>
+                <label>Message</label><br/>
                 <textarea name="message" className="contactInputs" style={{minHeight:"80px"}} required/>
-                <br/>
+                </div>
                 <div className="contactItems">
                   <a className="mailIcon" href="mailto:filipscerbik@gmail.com"><HiOutlineMail /></a>
                   <a className="mailText" href="mailto:filipscerbik@gmail.com">filipscerbik@gmail.com</a>

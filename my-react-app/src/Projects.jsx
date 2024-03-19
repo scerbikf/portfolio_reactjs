@@ -15,7 +15,7 @@ function Projects(){
 
         if(projectsTitle, mySwiper) {
           const active = () => {
-            if(window.scrollY > 1300){
+            if(window.scrollY > 1500){
                 projectsTitle.current.style.visibility = "visible";
                 projectsTitle.current.style.animation = "2s slideLeft";
                 projectsTitle.current.style.animationIterationCount = "1";
@@ -28,7 +28,8 @@ function Projects(){
         }
       },[window.scrollY]);
 
-    return(<>
+    return(
+    <div className="projectsDiv">
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
 
     
@@ -42,6 +43,7 @@ function Projects(){
         coverflowEffect={{
           rotate: 50,
         }}
+        style={{width:"1100px"}}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination]}
       >
@@ -150,8 +152,7 @@ function Projects(){
             }</>)}
         </SwiperSlide>
     </Swiper>
-   
-   
-    </>);
+    </div>
+    );
 }
 export default Projects
