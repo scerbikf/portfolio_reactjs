@@ -45,15 +45,15 @@ function About(){
     return(<>
         <div className="aboutDiv">
         <p ref={aboutTitle} className="aboutTitleText">About</p>
-                <img src="/public/profile2.jpg" alt="profile" className="profile" />
-                <div className="aboutText">
+                    <img src="/public/profile2.jpg" alt="profile" className="profile" />
+                    <div className="aboutText">
                     <p className="whoAmI">So, who am I?</p>
                     <p className="aboutMeText">
                         My name is Filip Ščerbík. Im a frontend & freelance web developer from Trebisov, Slovakia.
                         I love to improve everyday and collect new experience and skills everywhere i can.
                         Im self-taught programmer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
                     </p>
-                </div>
+                    </div>
                 <div className="skillsDiv">
                         <p>HTML</p> 
                         <div className="progress">
@@ -96,6 +96,7 @@ function About(){
                         </div> 
                 
                 </div>
+                
         </div>
         </>);
 }

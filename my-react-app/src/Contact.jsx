@@ -43,7 +43,7 @@ function Contact(){
     
     return(<>
     <div className="contactDiv">
-            <p className="contactTitle">Contact</p>
+            <p className="contactTitleText">Contact</p>
             <p className="contactText">Have a question or want to work together?</p>
             <div className="formDiv">
               <form ref={form} onSubmit={checkBtn}>

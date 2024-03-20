@@ -8,13 +8,14 @@ import Footer from "./Footer.jsx";
 function Portfolio(){
     return(<>
             <Header/>
-            <div className="homeBackground"></div>
             <div className="content">
                 <Home/>
-                <About/>
-                <Projects/>
-                <Contact/>
-                <Footer/>
+                <div className="apcfDiv">
+                    <About/>
+                    <Projects/>
+                    <Contact/>
+                    <Footer/>
+                </div>
             </div>
             
         </>);

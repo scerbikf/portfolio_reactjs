@@ -1,6 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
+  background-color: black;
 }
 .headerDiv{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,16 +85,8 @@ a{
   align-items: center;
   justify-content: center;
 }
-.homeBackground{
-  background-color: black;
-  position: absolute;
-  padding: 0px;
-  margin: 0px;
-  height: 100vh;
-  width: 200vh;
-}
 .homeDiv{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tusker Grotesk", sans-serif;
   background: url("/public/background.png") fixed center no-repeat;
   background-size: 200vh 100vh;
   height: 100vh;
@@ -108,84 +101,85 @@ a{
   z-index: 1;
 }
 .name{
+  position: fixed;
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 4.5rem;
   font-weight: 600;
   animation: fadeInHome ease 9s;
   animation-iteration-count: 1;
+  z-index: 1;
 }
 .autoText{
+  position: fixed;
   font-size: 2.5em;
-  margin-top: 0px;
+  margin-top: 200px;
   animation: fadeInHome ease 9s;
   animation-iteration-count: 1;
 }
 .aboutDiv{
-  font-family: serif;
+  font-family: "Tusker Grotesk", sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr 1.5fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
   "aboutTitleText aboutTitleText aboutTitleText aboutTitleText" 
-  ". profile skillsDiv skillsDiv"
-  ". aboutText skillsDiv skillsDiv"
-  ". aboutText skillsDiv skillsDiv";
+  ". profile aboutText aboutText"
+  ". skillsDiv aboutText aboutText"
+  ". skillsDiv aboutText aboutText";
   height: 960px;
   width: 1920px;
-  margin: 0px 0px 0px 0px;
-  background-color: white;
+  margin: 0px;
   transition: all 0.7s;
+  z-index: 2;
 }
 .aboutTitleText{ 
   grid-area: aboutTitleText;
   text-align: center;
-  font-family: serif;
-  font-weight: 400;
-  margin: 100px 0px 0px 0px;
-  font-size: 4em;
+  font-weight: 500;
+  margin: 80px 0px 0px 0px;
+  font-size: 5em;
   visibility: hidden;
 }
 .profile{
   grid-area: profile;
-  place-items: center;
-  margin: 70px auto 0px auto;
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
 }
 .aboutText{
   grid-area: aboutText;
-  margin-top: 30px;
 }
 .whoAmI{
-  text-align: center;
   font-size: 3rem;
-  margin: 0px 0px 0px 0px;
-}
-.aboutMeText{
-  font-size: 1.5rem;
-  margin: 40px 0px 0px 0px;
-}
-.skillsDiv{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  grid-area: skillsDiv;
-  width: 450px;
-  text-align: left;
+  color: white;
   margin: 50px 0px 0px 100px;
 }
+.aboutMeText{
+  color: white;
+  font-size: 2.5rem;
+  width: 700px;
+  margin: 50px 0px 0px 100px;
+}
+.skillsDiv{
+  grid-area: skillsDiv;
+  color: white;
+  width: 500px;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 0px 0px 0px 0px;
+}
 .skillsDiv p{
-  margin: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
 }
 .progress{
   padding: 2px;
   border-radius: 2px;
-  background: rgba(0, 0, 0, 0.25);  
+  background: rgba(0, 0, 0, 0.5);  
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 .progress-bar2 {
-  height: 25px;
+  height: 20px;
   border-radius: 2px;
   background-image: linear-gradient(to right, #141e30    , #243b55 );
   width: 0%;
@@ -194,18 +188,19 @@ a{
 .projectsDiv{
   height: 960px;
   width: 1920px;
-  background-color: rgba(0, 0, 0, 0.295);
+  z-index: 2;
 }
 .projectsTitleText{ 
-  font-family: serif;
-  font-weight: 400;
-  margin: 100px 0px 100px 0px;
-  font-size: 4em;
+  font-family: "Tusker Grotesk", sans-serif;
+  font-weight: 500;
+  margin: 80px 0px 70px 0px;
+  font-size: 5em;
   visibility: hidden;
   text-align: center;
 }
 .swiper {
-  width: 100%;
+  color: white;
+  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 180px;
   visibility: hidden;
@@ -250,7 +245,7 @@ a{
   width: 50px;
   height: 50px;
   margin: 0px 0px 0px 0px;
-  animation: 1s slideLeft2;
+  animation: 1s slideLeftIcons2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -262,32 +257,34 @@ a{
   width: 50px;
   height: 50px;
   margin: 0px 0px 0px 0px;
-  animation: 1s slideRight2;
+  animation: 1s slideRightIcons2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
 .contactDiv{
-  font-family: serif;
+  font-family: "Tusker Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 710px;
   width: 1920px;
   margin: 0px 0px 0px 0px;
+  z-index: 2;
 }
-.contactTitle{
-  font-family: serif;
-  font-weight: 400;
-  font-size: 4rem;
-  margin: 100px 0px 0px 0px;
+.contactTitleText{
+  font-weight: 500;
+  margin: 80px 0px 0px 0px;
+  font-size: 5em;
 }
 .contactText{
+  color: white;
   height: 30px;
   text-align: center;
   font-size: 1.5rem;
   margin: 30px 0px 0px 0px;
 }
 .formDiv{
+  color: white;
   font-size: 2rem;
   margin: 20px 0px 0px 0px;
 }
@@ -303,20 +300,18 @@ a{
   display: flex;
 }
 .mailIcon{
-  color: black;
+  color: white;
   margin: 6px 0px 0px 10px;
 }
 .mailText{
   font-size: 20px;
-  color: black;
+  color: white;
   margin: 10px 0px 0px 10px;
 }
 .submitBtn{
-  font-family: 'Ubuntu', sans-serif;
   width: 170px;
   height: 40px;
   font-size: 18px;
-  font-weight: bold;
   letter-spacing: 1px;
   border: 3px solid black;
   background: white;
@@ -372,8 +367,14 @@ a{
   visibility: hidden;
 }
 .footerDiv{
-  text-align: center;
+  font-family: "Tusker Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 228px;
+  width: 1920px;
+  color: white;
 }
 .button-57 {
   position: relative;
@@ -382,6 +383,7 @@ a{
   color: #18181a;
   display: inline-block;
   font-size: 15px;
+  font-weight: bold;
   line-height: 15px;
   padding: 18px 18px 5px;
   margin-top: 0px;
@@ -445,7 +447,7 @@ a{
   font-size:30px;
   text-align:center;
   text-decoration:none;
-  color:#404040;
+  color:white;
   margin: 0 30px;
   transition:.5s;
 }
@@ -457,7 +459,7 @@ a{
 .iconsList li a span:nth-child(3){
   width:100%;
   height:3px;
-  background:#404040;
+  background:white;
 }
 .iconsList li a span:nth-child(1) {
   top:0;
@@ -485,7 +487,7 @@ a{
 .iconsList li a span:nth-child(4){
   width:3px;
   height:100%;
-  background:#404040;
+  background:white;
 }
 .iconsList li a span:nth-child(2) {
   top:0;
@@ -509,7 +511,6 @@ a{
   transform-origin: bottom;
   transition:transform .5s;
 }
-
 .facebook:hover {
   color: #3b5998;
 }
@@ -542,6 +543,15 @@ a{
 }
 .iconsList li a:hover:nth-child(4) {
   color: #dd4b39;
+}
+.apcfDiv{
+  background-image: radial-gradient(#021027, #000000);
+  z-index: 99;
+}
+.aboutTitleText,
+.projectsTitleText,
+.contactTitleText{
+  color: white;
 }
 @keyframes fadeInHome {
   0% {
@@ -591,7 +601,7 @@ a{
     z-index: 0;
     }
 }
-@keyframes slideLeft2 {
+@keyframes slideLeftIcons2 {
   0% {
     opacity: 1;
     margin-top: -180px;
@@ -601,17 +611,17 @@ a{
     }
    100% {
     opacity: 1;
-    margin-left: -80px;
+    margin-left: -60px;
     margin-top: -240px;
     position: relative;
     z-index: 0;
     }
 }
-@keyframes slideRight2 {
+@keyframes slideRightIcons2 {
   0% {
     opacity: 1;
     margin-top: -240px;
-    margin-left: -80px;
+    margin-left: -60px;
     position: relative;
     z-index: 0;
     }

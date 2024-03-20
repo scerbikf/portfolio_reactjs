@@ -43,8 +43,14 @@ function Projects(){
         coverflowEffect={{
           rotate: 50,
         }}
-        style={{width:"1100px"}}
         pagination={{ clickable: true }}
+        style={{
+          "--swiper-pagination-color": "#f5eee6",
+          "--swiper-pagination-bullet-inactive-color": "#999999",
+          "--swiper-pagination-bullet-inactive-opacity": "1",
+          "--swiper-pagination-bullet-size": "15px",
+          "--swiper-pagination-bullet-horizontal-gap": "7px"
+        }}
         modules={[EffectCoverflow, Pagination]}
       >
         <SwiperSlide>
