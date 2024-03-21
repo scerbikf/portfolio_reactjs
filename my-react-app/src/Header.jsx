@@ -11,7 +11,7 @@ function Header(){
   useEffect(() => {
     if (selectHeader) {
       const headerScrolled = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 500) {
           selectHeader.current.classList.add("header-scrolled")
         } else {
           selectHeader.current.classList.remove("header-scrolled")
@@ -60,11 +60,12 @@ function Header(){
             <nav id="navbar" className="navbar">
                 <ul>
                 <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
-                <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 955, behavior: "smooth"})}>About</a></li>
-                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1915, behavior: "smooth"})}>Projects</a></li>
-                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2875, behavior: "smooth"})}>Contact</a></li>
+                <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1000, behavior: "smooth"})}>About</a></li>
+                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1900, behavior: "smooth"})}>Projects</a></li>
+                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2900, behavior: "smooth"})}>Contact</a></li>
                 </ul>
             </nav>
+            
         </div>
   </header>);
 }

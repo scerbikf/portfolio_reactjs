@@ -7,7 +7,7 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
   position: fixed;
-  padding: 5px 0;
+  padding: 7px 0;
   right: 0;
   left: 0;
   padding-left: 300px;
@@ -20,9 +20,9 @@ body{
 }
 .header-scrolled{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  opacity: 0.8;
-  padding: 0px 0;
-  background-color: black;
+  opacity: 1;
+  padding: 5px 0;
+  background-color: #131313;
   position: fixed;
   right: 0;
   left: 0;
@@ -31,7 +31,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: right;
-  transition: all 0.5s;
+  transition: all 1s;
   z-index: 10;
 }
 .navbar{
@@ -59,7 +59,6 @@ a{
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 .navbar>ul>li>a:before {
@@ -79,6 +78,17 @@ a{
   visibility: visible;
   width: 80%;
 }
+.progressNav{
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  appearance: none;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: transparent;
+  color: #f5eee6;
+}
 .content{
   display: flex;
   flex-direction: column;
@@ -89,7 +99,7 @@ a{
   font-family: "Tusker Grotesk", sans-serif;
   background: url("/public/background.png") fixed center no-repeat;
   background-size: 200vh 100vh;
-  height: 100vh;
+  height: 1000px;
   width: 200vh;
   display: flex;
   flex-direction: column;
@@ -126,9 +136,9 @@ a{
   "aboutTitleText aboutTitleText aboutTitleText aboutTitleText" 
   ". profile aboutText aboutText"
   ". skillsDiv aboutText aboutText"
-  ". skillsDiv aboutText aboutText";
-  height: 960px;
-  width: 1920px;
+  ". . . .";
+  height: 900px;
+  width: 200vh;
   margin: 0px;
   transition: all 0.7s;
   z-index: 2;
@@ -137,7 +147,7 @@ a{
   grid-area: aboutTitleText;
   text-align: center;
   font-weight: 500;
-  margin: 80px 0px 0px 0px;
+  margin: 130px 0px 0px 0px;
   font-size: 5em;
   visibility: hidden;
 }
@@ -185,22 +195,26 @@ a{
   width: 0%;
   transition: 1.5s 0.2s width ease-in-out;
 }
+.portfolioHR{
+  height: 1px;
+  width: 80%;
+  margin: 50px 0px 50px 10%;
+}
 .projectsDiv{
-  height: 960px;
-  width: 1920px;
+  height: 870px;
+  width: 200vh;
   z-index: 2;
 }
 .projectsTitleText{ 
   font-family: "Tusker Grotesk", sans-serif;
   font-weight: 500;
-  margin: 80px 0px 70px 0px;
+  margin: 130px 0px 70px 0px;
   font-size: 5em;
   visibility: hidden;
   text-align: center;
 }
 .swiper {
   color: white;
-  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 180px;
   visibility: hidden;
@@ -262,18 +276,19 @@ a{
   animation-iteration-count: 1;
 }
 .contactDiv{
-  font-family: "Tusker Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 710px;
-  width: 1920px;
+  justify-content: flex-start;
+  font-family: "Tusker Grotesk", sans-serif;
+  height: 686px;
+  width: 200vh;
   margin: 0px 0px 0px 0px;
   z-index: 2;
 }
 .contactTitleText{
   font-weight: 500;
-  margin: 80px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   font-size: 5em;
 }
 .contactText{
@@ -370,10 +385,10 @@ a{
   font-family: "Tusker Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 228px;
-  width: 1920px;
+  height: 220px;
+  width: 200vh;
   color: white;
 }
 .button-57 {
