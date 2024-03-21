@@ -545,13 +545,14 @@ a{
   color: #dd4b39;
 }
 .apcfDiv{
-  background-image: radial-gradient(#021027, #000000);
-  z-index: 99;
+  /*background-image: radial-gradient(#021027, #000000);*/
+  background-color: #131313;
+  z-index: 1;
 }
 .aboutTitleText,
 .projectsTitleText,
 .contactTitleText{
-  color: white;
+  color: #f5e5d4;
 }
 @keyframes fadeInHome {
   0% {
