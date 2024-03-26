@@ -3,24 +3,10 @@ import ProgressBar from "./ProgressBar.jsx";
 
 function Header(){
 
-  const selectHeader = useRef(null);
   const home = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
-
-  useEffect(() => {
-    if (selectHeader) {
-      const headerScrolled = () => {
-        if (window.scrollY > 500) {
-          selectHeader.current.classList.add("header-scrolled")
-        } else {
-          selectHeader.current.classList.remove("header-scrolled")
-        }
-      }
-      document.addEventListener("scroll", headerScrolled)
-    }
-  },[window.scrollY]);
 
   useEffect(() => {
     
@@ -56,8 +42,8 @@ function Header(){
 
     return(
     <header>
-        <div ref={selectHeader} id="header" className="headerDiv">
-            <nav id="navbar" className="navbar">
+        <div className="headerDiv">
+            <nav className="navbar">
                 <ul>
                 <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
                 <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1000, behavior: "smooth"})}>About</a></li>
