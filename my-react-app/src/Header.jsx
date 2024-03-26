@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from "react";
+import ProgressBar from "./ProgressBar.jsx";
 
 function Header(){
 
@@ -23,7 +24,6 @@ function Header(){
 
   useEffect(() => {
     
-    if (home, about, projects, contact) {
       const active = () => {
         if (window.scrollY < 500){
           home.current.classList.add("active")
@@ -51,7 +51,7 @@ function Header(){
         }
       }
       document.addEventListener("scroll", active)
-    }
+
   },[window.scrollY]);
 
     return(
@@ -65,7 +65,7 @@ function Header(){
                 <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2900, behavior: "smooth"})}>Contact</a></li>
                 </ul>
             </nav>
-            
+            <ProgressBar className="progressNav" max="100"></ProgressBar>
         </div>
   </header>);
 }
