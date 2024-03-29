@@ -11,27 +11,23 @@ function Projects(){
     const projectsTitle = useRef(null);
     const mySwiper = useRef(null);
 
-    useEffect(() => {
+    /*useEffect(() => {
 
         if(projectsTitle, mySwiper) {
           const active = () => {
             if(window.scrollY > 1500){
                 projectsTitle.current.style.visibility = "visible";
-                projectsTitle.current.style.animation = "2s slideLeft";
-                projectsTitle.current.style.animationIterationCount = "1";
                 mySwiper.current.style.visibility = "visible";
-                mySwiper.current.style.animation = "2s slideLeft";
-                mySwiper.current.style.animationIterationCount = "1";
             }
           }
           window.addEventListener("scroll", active)
         }
       },[window.scrollY]);
+      */
 
     return(
     <div className="projectsDiv">
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
-
     
     <Swiper
         ref={mySwiper}

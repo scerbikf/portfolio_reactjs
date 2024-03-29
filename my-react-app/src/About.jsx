@@ -3,7 +3,6 @@ import React, {useEffect, useRef} from "react";
 
 function About(){
 
-    const aboutTitle = useRef(null);
     const barHTML = useRef(null);
     const barCSS = useRef(null);
     const barJS = useRef(null);
@@ -15,12 +14,9 @@ function About(){
 
     useEffect(() => {
 
-        if(aboutTitle ,barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA) {
+        if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA) {
           const active = () => {
             if(window.scrollY > 600){
-                aboutTitle.current.style.visibility = "visible";
-                aboutTitle.current.style.animation = "2s slideLeft";
-                aboutTitle.current.style.animationIterationCount = "1";
                 barHTML.current.style.width = "95%"
                 barCSS.current.style.transition = "1.5s 0.4s width ease-in-out"
                 barCSS.current.style.width = "95%"
@@ -44,15 +40,15 @@ function About(){
 
     return(<>
         <div className="aboutDiv">
-        <p ref={aboutTitle} className="aboutTitleText">About</p>
-                    <img src="/public/profile2.jpg" alt="profile" className="profile" />
-                    <div className="aboutText">
-                    <p className="whoAmI">So, who am I?</p>
-                    <p className="aboutMeText">
-                        My name is Filip Ščerbík. Im a frontend & freelance web developer from Trebisov, Slovakia.
-                        I love to improve everyday and collect new experience and skills everywhere i can.
-                        Im self-taught programmer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
-                    </p>
+                    <p className="aboutTitleText">About</p>
+                    <div className="imgAbout">
+                        <img src="/public/profile2.jpg" alt="profile" className="profile" />
+                        <p className="whoAmI">So, who am I?</p>
+                        <p className="aboutMeText">
+                            Im Frontend Freelance web developer from Trebisov, Slovakia.
+                            I love to improve everyday and collect new experience and skills everywhere i possibly can.
+                            Im self-taught programmer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
+                        </p>
                     </div>
                 <div className="skillsDiv">
                         <p>HTML</p> 
