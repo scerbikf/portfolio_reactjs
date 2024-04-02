@@ -326,6 +326,11 @@ progress::-webkit-progress-value {
   background-color: #f5e5d448;
   border: 1px solid #f5e5d4;
 }
+.contactInputs:focus{
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
 .formDiv label{
   font-size: 15px;
   letter-spacing: 1px;
@@ -350,58 +355,37 @@ progress::-webkit-progress-value {
   height: 40px;
   font-size: 18px;
   letter-spacing: 1px;
-  border: 3px solid black;
-  background: white;
-  color: black;
-  border-radius: 40px;
+  border: 2px solid #f5e5d4;
+  background-color: #f5e5d4;
+  color: #131313;
+  border-radius: 3px;
   cursor: pointer;
   overflow: hidden;
   margin: 2px 0px 0px 295px;
   padding-top: 8px;
-}
-.submitBtn:hover{
-  background: black;
-  color: white;
   transition: 0.3s;
 }
-.submitBtn span{
-  opacity: 1;
-  visibility: visible;
-  transition: all .35s;
+.submitBtn:hover{
+  background: #131313;
+  color: #f5e5d4;
 }
 .success{
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  border-radius: 50%;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .35s;
-}
-.success svg{
-  width: 20px;
-  height: 20px;
-  fill: yellowgreen;
-  transform-origin: 50% 50%;
-  transform: translateY(-50%) rotate(0deg) scale(0);
-  transition: all .35s;
+  margin-top: 50%;
 }
 .submitBtn.activeBtn{
   width: 40px;
-  height: 40px;
+  margin-left: 340px;
+  background: #f5e5d448;
 }
-.submitBtn.activeBtn .success{
-  opacity: 1;
-  visibility: visible;
-}
-.submitBtn.activeBtn .success svg{
-  margin-top: 50%;
-  transform: translateY(-50%) rotate(720deg) scale(1);
+.submitBtn.activeBtn:hover{
+  background: #131313;
 }
 .submitBtn.activeBtn span{
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+}
+.submitBtn.activeBtn .success{
+  transform: translateY(-50%);
+  color: #f5e5d4;
 }
 .footerDiv{
   font-family: "Tusker Grotesk", sans-serif;
@@ -413,59 +397,22 @@ progress::-webkit-progress-value {
   width: 200vh;
   color: white;
 }
-.button-57 {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #18181a;
-  color: #18181a;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 15px;
-  padding: 18px 18px 5px;
-  margin-top: 0px;
-  text-decoration: none;
-  cursor: pointer;
-  background: #fff;
-  z-index: 1;
-}
-.button-57 span:first-child {
-  transition: color 600ms black;
-}
-.button-57 span:last-child {
+.footerBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f5e5d4;
   color: white;
-  display: block;
-  position: relative;
-  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-  z-index: 100;
-  opacity: 0;
-  top: 50%;
-  left: 50%;
-  transform: translateY(225%) translateX(-50%);
-  height: 14px;
-  line-height: 13px;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #131313;
+  z-index: 1;
+  transition: 0.7s;
 }
-.button-57:after {
-  content: "";
-  position: absolute;
-  bottom: -50%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transform-origin: bottom center;
-  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
-  transform: skewY(9.3deg) scaleY(0);
- 
-}
-.button-57:hover:after {
-  transform-origin: bottom center;
-  transform: skewY(9.3deg) scaleY(2);
-}
-.button-57:hover span:last-child {
-  transform: translateX(-50%) translateY(-100%);
-  opacity: 1;
-  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+.footerBtn:hover{
+  background-color: #5f5851;
 }
 .hrFooter{
   position: absolute;
@@ -479,7 +426,7 @@ progress::-webkit-progress-value {
 }
 .iconsList {
   grid-area: iconsList;
-  margin: 60px 0px 0px 0px;
+  margin: 40px 0px 20px 0px;
   padding:0px;
   display:flex;
 }
@@ -495,7 +442,7 @@ progress::-webkit-progress-value {
   font-size:30px;
   text-align:center;
   text-decoration:none;
-  color: #f5e5d4;
+  color: white;
   margin: 0 30px;
   transition:.5s;
 }
@@ -507,7 +454,7 @@ progress::-webkit-progress-value {
 .iconsList li a span:nth-child(3){
   width:100%;
   height:3px;
-  background:#f5e5d4;;
+  background:white;;
 }
 .iconsList li a span:nth-child(1) {
   top:0;
@@ -530,12 +477,11 @@ progress::-webkit-progress-value {
   transform-origin: right;
   transition:transform .5s;
 }
-
 .iconsList li a span:nth-child(2),
 .iconsList li a span:nth-child(4){
   width:3px;
   height:100%;
-  background:#f5e5d4;;
+  background:white;;
 }
 .iconsList li a span:nth-child(2) {
   top:0;
