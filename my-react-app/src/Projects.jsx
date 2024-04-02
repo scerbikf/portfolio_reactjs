@@ -1,31 +1,18 @@
-import React, {useEffect, useRef} from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination , Navigation} from 'swiper/modules';
 import Slide from "./ProjectProp.jsx";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 function Projects(){
 
     const projectsTitle = useRef(null);
     const mySwiper = useRef(null);
 
-    /*useEffect(() => {
-
-        if(projectsTitle, mySwiper) {
-          const active = () => {
-            if(window.scrollY > 1500){
-                projectsTitle.current.style.visibility = "visible";
-                mySwiper.current.style.visibility = "visible";
-            }
-          }
-          window.addEventListener("scroll", active)
-        }
-      },[window.scrollY]);
-      */
-
-    return(
+    return(<>
     <div className="projectsDiv">
     <p ref={projectsTitle} className="projectsTitleText">Projects</p>
     
@@ -40,14 +27,17 @@ function Projects(){
           rotate: 50,
         }}
         pagination={{ clickable: true }}
+        navigation={true}
         style={{
           "--swiper-pagination-color": "#f5eee6",
           "--swiper-pagination-bullet-inactive-color": "#999999",
           "--swiper-pagination-bullet-inactive-opacity": "1",
           "--swiper-pagination-bullet-size": "15px",
-          "--swiper-pagination-bullet-horizontal-gap": "7px"
+          "--swiper-pagination-bullet-horizontal-gap": "7px",
+          "--swiper-navigation-color": "#f5eee6",
+          "--swiper-navigation-top-offset": "40%"
         }}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
       >
         <SwiperSlide>
             {({ isActive }) => (<>
@@ -155,6 +145,7 @@ function Projects(){
         </SwiperSlide>
     </Swiper>
     </div>
-    );
+    <hr className="hrProjects"></hr>
+    </>);
 }
 export default Projects

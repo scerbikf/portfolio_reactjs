@@ -11,10 +11,11 @@ function About(){
     const barPHP = useRef(null);
     const barPYTHON = useRef(null);
     const barJAVA = useRef(null);
+    const barSQL = useRef(null);
 
     useEffect(() => {
 
-        if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA) {
+        if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA, barSQL) {
           const active = () => {
             if(window.scrollY > 600){
                 barHTML.current.style.width = "95%"
@@ -27,11 +28,13 @@ function About(){
                 barNODE.current.style.transition = "1.5s 1s width ease-in-out"
                 barNODE.current.style.width = "75%"
                 barPHP.current.style.transition = "1.5s 1.2s width ease-in-out"
-                barPHP.current.style.width = "40%"
+                barPHP.current.style.width = "50%"
                 barPYTHON.current.style.transition = "1.5s 1.4s width ease-in-out"
-                barPYTHON.current.style.width = "40%"
+                barPYTHON.current.style.width = "50%"
                 barJAVA.current.style.transition = "1.5s 1.6s width ease-in-out"
                 barJAVA.current.style.width = "40%"
+                barSQL.current.style.transition = "1.5s 1.6s width ease-in-out"
+                barSQL.current.style.width = "30%"
             }
           }
           window.addEventListener("scroll", active)
@@ -89,11 +92,17 @@ function About(){
                         <p>Java</p> 
                         <div className="progress">
                             <div ref={barJAVA} className="progress-bar2"></div>                       
+                        </div>
+
+                        <p>SQL</p> 
+                        <div className="progress">
+                            <div ref={barSQL} className="progress-bar2"></div>                       
                         </div> 
                 
                 </div>
                 
         </div>
+        <hr className="hrAbout"></hr>
         </>);
 }
 export default About
