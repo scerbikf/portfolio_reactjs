@@ -7,6 +7,7 @@ function Footer(){
 
 return(<footer className="footerDiv">
         <button className="button-57" role="button"><span className="text">Button 57</span><span>Alternate text</span></button>
+        <hr className="hrFooter"></hr>
         <ul className="iconsList">
             <li>
                 <a className="facebook" href="#">
@@ -45,6 +46,6 @@ return(<footer className="footerDiv">
                 </a>
             </li>
         </ul>
-        <p>Filip Ščerbík ©2024</p>
+        <p style={{color:"#f5e5d4"}}>Filip Ščerbík ©2024</p>
         </footer>)}
 export default Footer
