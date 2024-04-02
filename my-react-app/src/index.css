@@ -300,7 +300,7 @@ progress::-webkit-progress-value {
   font-size: 2.5em;
   color: #f5e5d4;
   background-color: #f5e5d448;
-  margin: 60px auto 80px auto;
+  margin: 60px auto 50px auto;
   border: 1px solid;
   border-radius: 999px;
   width: 200px;
@@ -311,7 +311,7 @@ progress::-webkit-progress-value {
   height: 30px;
   text-align: center;
   font-size: 1.5rem;
-  margin: 30px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .formDiv{
   color: white;
@@ -321,25 +321,31 @@ progress::-webkit-progress-value {
 .contactInputs{
   min-height: 40px;
   min-width: 600px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #f5e5d448;
+  border: 1px solid #f5e5d4;
 }
 .formDiv label{
-  font-size: 25px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f5e5d4;
 }
 .contactItems{
   display: flex;
 }
 .mailIcon{
-  color: white;
-  margin: 6px 0px 0px 10px;
+  color: #f5e5d4;
+  margin: 6px 0px 0px 0px;
 }
 .mailText{
   font-size: 20px;
-  color: white;
-  margin: 10px 0px 0px 10px;
+  color: #f5e5d4;
+  margin: 11px 0px 0px 10px;
 }
 .submitBtn{
-  width: 170px;
+  width: 130px;
   height: 40px;
   font-size: 18px;
   letter-spacing: 1px;
@@ -349,7 +355,7 @@ progress::-webkit-progress-value {
   border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
-  margin: 2px 0px 0px 200px;
+  margin: 2px 0px 0px 230px;
   padding-top: 8px;
 }
 .submitBtn:hover{
