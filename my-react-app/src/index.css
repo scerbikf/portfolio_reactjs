@@ -4,6 +4,7 @@ body{
   background-color: black;
   width: 100%; 
   height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 .headerDiv{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -579,12 +580,12 @@ progress::-webkit-progress-value {
   0% {
    opacity: 0;
    background: url("/public/background.png") fixed center no-repeat;
-   background-size: 200vh 100vh;
+   background-size: 100% 100vh;
    }
    100% {
     opacity: 1;
     background: url("/public/background.png") fixed center no-repeat;
-    background-size: 200vh 100vh;
+    background-size: 100% 100vh;
     }
  }
 @keyframes slideLeft {
@@ -677,6 +678,10 @@ progress::-webkit-progress-value {
     margin: 0 20px;
   }
   .name{
-    font-size;
+    font-size: 3rem;
+    width: 200px;
+  }
+  .autoText{
+    font-size: 1.5rem;
   }
 }
