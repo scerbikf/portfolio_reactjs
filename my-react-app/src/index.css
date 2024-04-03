@@ -115,6 +115,7 @@ progress::-webkit-progress-value {
 .apcfDiv{
   background-color: #131313;
   z-index: 1;
+  width: 100%;
 }
 .aboutDiv{
   font-family: "Tusker Grotesk", sans-serif;
@@ -126,7 +127,7 @@ progress::-webkit-progress-value {
   "imgAbout skillsDiv"
   ". .";
   height: 900px;
-  width: 200vh;
+  width: 100%;
   margin: 100px 0px 100px 0px;
   transition: all 0.7s;
   z-index: 2;
@@ -205,7 +206,7 @@ progress::-webkit-progress-value {
 }
 .projectsDiv{
   height: 900px;
-  width: 200vh;
+  width: 100%;
   z-index: 2;
 }
 .projectsTitleText{ 
@@ -294,7 +295,7 @@ progress::-webkit-progress-value {
   justify-content: flex-start;
   font-family: "Tusker Grotesk", sans-serif;
   height: 680px;
-  width: 200vh;
+  width: 100%;
   margin: 0px 0px 0px 0px;
   z-index: 2;
 }
@@ -403,7 +404,7 @@ progress::-webkit-progress-value {
   justify-content: flex-end;
   align-items: center;
   height: 220px;
-  width: 200vh;
+  width: 100%;
   color: white;
 }
 .footerBtn{
