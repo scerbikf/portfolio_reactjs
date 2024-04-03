@@ -122,6 +122,7 @@ progress::-webkit-progress-value {
   font-family: "Tusker Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 900px;
   width: 100%;
   margin: 100px 0px 0px 0px;
@@ -137,7 +138,7 @@ progress::-webkit-progress-value {
   justify-content: center;
   font-size: 200%;
   background-color: #f5e5d448;
-  margin: 0px auto 0px auto;
+  margin: 0px;
   border: 1px solid;
   border-radius: 999px;
   width: 170px;
@@ -150,17 +151,18 @@ progress::-webkit-progress-value {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-between;
   align-items: center;
   width: 60%;
-  margin: 50px auto 0px auto;
+  margin: 50px 0px 0px 0px;
 }
 .imgAbout{
   grid-area: imgAbout;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   align-items: center;
+  margin: 0px 0px 0px 50px;
 }
 .profile{
   width: 200px;
@@ -172,7 +174,7 @@ progress::-webkit-progress-value {
   color: #f5e5d4;
   font-size: 300%;
   font-weight: 500;
-  width: 70%;
+  width: 100%;
   line-height: 1.3;
   text-align: center;
   margin: 0px 0px 10px 0px;
@@ -189,10 +191,10 @@ progress::-webkit-progress-value {
 .skillsDiv{
   grid-area: skillsDiv;
   color: white;
-  width: 43%;
+  width: 100%;
   text-align: left;
   font-size: 1.3rem;
-  margin: 0px;
+  margin: 0px 0px 0px 50px;
 }
 .skillsDiv p{
   margin: 10px 0px 0px 0px;
@@ -660,8 +662,30 @@ progress::-webkit-progress-value {
   .navbar{
     margin-left: 0%;
   }
+  .name{
+    font-size: 2.2rem;
+    width: 310px;
+    margin-bottom: 100px;
+  }
+  .autoText{
+    font-size: 1.4rem;
+    margin-bottom: 180px;
+  }
+  .homeDiv{
+    background: url("/public/background_mobile2.png") fixed center no-repeat;
+    background-size: 100% 100vh;
+    height: 900px;
+  }
+  .aboutDiv{
+    height: 1100px;
+    margin: 50px 0px 0px 0px;
+  }
   .aboutDivContent{
     flex-direction: column;
+    width: 100%;
+  }
+  .imgAbout{
+    margin: 0px;
   }
   .profile{
     width: 150px;
@@ -671,25 +695,76 @@ progress::-webkit-progress-value {
     font-size: 225%;
   }
   .aboutMeText{
-    font-size: 150%;
-    width: 400px;
+    font-size: 130%;
+    width: 350px;
+  }
+  .skillsDiv{
+    font-size: 1rem;
+    margin: 0px;
+    width: 80%;
+  }
+  .progress{
+    padding: 1px;
+  }
+  .progress-bar2 {
+    height: 16px;
+  }
+  .hrAbout{
+    top: 1970px;
+  }
+  .projectsTitleText{ 
+    margin: 0px auto 20px auto;
+  }
+  .swiper-slide {
+    width: 200px;
+    height: 200px;
+  }
+  .slideDown, .slideUp{
+    font-size: 25px;
+  }
+  .iconsDown{
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+  }
+  .iconsUp{
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+  }
+  @keyframes slideLeftIcons2 {
+    0% {
+      opacity: 1;
+      margin-left: 0px;
+      margin-top: -120px;
+      position: relative;
+      z-index: 0;
+      }
+     100% {
+      opacity: 1;
+      margin-left: -50px;
+      margin-top: -180px;
+      position: relative;
+      z-index: 0;
+      }
+  }
+  @keyframes slideRightIcons2 {
+    0% {
+      opacity: 1;
+      margin-left: -50px;
+      margin-top: -180px;
+      position: relative;
+      z-index: 0;
+      }
+     100% {
+      opacity: 1;
+      margin-left: 0px;
+      margin-top: -120px;
+      position: relative;
+      z-index: 0;
+      }
   }
   .iconsList li a{
     margin: 0 20px;
-  }
-  .name{
-    font-size: 2.5rem;
-    width: 330px;
-    margin-bottom: 300px;
-  }
-  .autoText{
-    font-size: 1.5rem;
-    margin-bottom: 350px;
-    margin-right: 0px;
-  }
-  .homeDiv{
-    background: url("/public/background_mobile2.png") fixed center no-repeat;
-    background-size: 100% 100vh;
-    height: 900px;
   }
 }

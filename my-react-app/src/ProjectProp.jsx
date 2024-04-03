@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 
 
 function Slide(props){
+    
     return(<>
             <img src={props.imgName}></img>
             <h1 className={props.nameClass}>{props.name}</h1>
