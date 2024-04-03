@@ -230,7 +230,7 @@ progress::-webkit-progress-value {
   color: white;
   padding-top: 50px;
   padding-bottom: 180px;
-  width: 1300px;
+  width: 70%;
 }
 .swiper-slide {
   width: 350px;
