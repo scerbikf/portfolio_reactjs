@@ -27,13 +27,13 @@ function Projects(){
           rotate: 50,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
+        navigation={window.innerWidth > 1100 ? true : false}
         style={{
           "--swiper-pagination-color": "#f5eee6",
           "--swiper-pagination-bullet-inactive-color": "#999999",
           "--swiper-pagination-bullet-inactive-opacity": "1",
-          "--swiper-pagination-bullet-size": "15px",
-          "--swiper-pagination-bullet-horizontal-gap": "7px",
+          "--swiper-pagination-bullet-horizontal-gap": "6px",
+          "--swiper-pagination-bullet-size": "10px",
           "--swiper-navigation-color": "#f5eee6",
           "--swiper-navigation-top-offset": "40%"
         }}

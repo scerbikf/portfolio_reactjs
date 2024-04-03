@@ -17,19 +17,19 @@ function Header(){
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 50 && window.scrollY < 1600){
+        else if(window.innerWidth > 1100 ? window.scrollY > 600 && window.scrollY < 1600 : window.scrollY > 600 && window.scrollY < 1700){
           about.current.classList.add("active")
           home.current.classList.remove("active")
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 1500 && window.scrollY < 2530){
+        else if(window.innerWidth > 1100 ? window.scrollY > 1500 && window.scrollY < 2530 : window.scrollY > 1700 && window.scrollY < 2700){
           projects.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.scrollY > 2430){
+        else if(window.innerWidth > 1100 ? window.scrollY > 2430 : window.scrollY > 2700){
           contact.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
