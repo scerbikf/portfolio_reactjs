@@ -144,7 +144,7 @@ progress::-webkit-progress-value {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 200%;
   background-color: #f5e5d448;
   margin: 0px auto 0px auto;
   border: 1px solid;
@@ -157,12 +157,13 @@ progress::-webkit-progress-value {
 }
 .aboutDivContent{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   justify-content: space-between;
+  align-items: center;
   width: 60%;
   margin: 50px auto 0px auto;
 }
-
 .imgAbout{
   grid-area: imgAbout;
   display: flex;
@@ -178,7 +179,7 @@ progress::-webkit-progress-value {
 }
 .whoAmI{
   color: #f5e5d4;
-  font-size: 3rem;
+  font-size: 300%;
   font-weight: 500;
   width: 500px;
   line-height: 1.3;
@@ -187,7 +188,7 @@ progress::-webkit-progress-value {
 }
 .aboutMeText{
   color: white;
-  font-size: 2rem;
+  font-size: 200%;
   font-weight: 500;
   width: 500px;
   line-height: 1.3;
@@ -197,10 +198,10 @@ progress::-webkit-progress-value {
 .skillsDiv{
   grid-area: skillsDiv;
   color: white;
-  width: 500px;
+  width: 43%;
   text-align: left;
   font-size: 1.3rem;
-  margin: 20px 0px 0px 0px;
+  margin: 0px;
 }
 .skillsDiv p{
   margin: 10px 0px 0px 0px;
@@ -341,10 +342,11 @@ progress::-webkit-progress-value {
   color: white;
   font-size: 2rem;
   margin: 20px 0px 0px 0px;
+  width: 30%;
 }
 .contactInputs{
   min-height: 40px;
-  min-width: 600px;
+  width: 99%;
   margin-bottom: 5px;
   color: white;
   background-color: #f5e5d448;
@@ -385,7 +387,7 @@ progress::-webkit-progress-value {
   border-radius: 3px;
   cursor: pointer;
   overflow: hidden;
-  margin: 2px 0px 0px 295px;
+  margin: 2px 0px 0px auto;
   padding-top: 8px;
   transition: 0.3s;
 }
