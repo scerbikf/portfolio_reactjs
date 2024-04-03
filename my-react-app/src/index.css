@@ -307,7 +307,7 @@ progress::-webkit-progress-value {
   font-size: 2em;
   color: #f5e5d4;
   background-color: #f5e5d448;
-  margin: 60px auto 50px auto;
+  margin: 50px auto 50px auto;
   border: 1px solid;
   border-radius: 999px;
   width: 170px;
