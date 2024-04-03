@@ -41,7 +41,7 @@ function Header(){
   },[window.scrollY]);
 
     return(
-    <header>
+    <>
         <div className="headerDiv">
             <nav className="navbar">
                 <ul>
@@ -53,6 +53,6 @@ function Header(){
             </nav>
             <ProgressBar className="progressNav" max="100"></ProgressBar>
         </div>
-  </header>);
+  </>);
 }
 export default Header
