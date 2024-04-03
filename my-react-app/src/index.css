@@ -112,6 +112,10 @@ progress::-webkit-progress-value {
   animation: fadeInHome ease 3s;
   animation-iteration-count: 1;
 }
+.apcfDiv{
+  background-color: #131313;
+  z-index: 1;
+}
 .aboutDiv{
   font-family: "Tusker Grotesk", sans-serif;
   display: grid;
@@ -564,10 +568,6 @@ progress::-webkit-progress-value {
 }
 .iconsList li a:hover:nth-child(4) {
   color: #dd4b39;
-}
-.apcfDiv{
-  background-color: #131313;
-  z-index: 1;
 }
 @keyframes fadeInHome {
   0% {
