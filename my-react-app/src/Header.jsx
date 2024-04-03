@@ -40,15 +40,46 @@ function Header(){
 
   },[window.scrollY]);
 
+  const scrollHome = () => {
+      window.scrollTo({top: 0, behavior: "smooth"})
+  }
+
+  const scrollAbout = () => {
+    if(window.innerWidth > 1100){
+      window.scrollTo({top: 1000, behavior: "smooth"})
+    }
+    else{
+      window.scrollTo({top: 900, behavior: "smooth"})
+    }
+  }
+
+  const scrollProjects = () => {
+    if(window.innerWidth > 1100){
+      window.scrollTo({top: 1900, behavior: "smooth"})
+    }
+    else{
+      window.scrollTo({top: 1800, behavior: "smooth"})
+    }
+  }
+
+  const scrollContact = () => {
+    if(window.innerWidth > 1100){
+      window.scrollTo({top: 2900, behavior: "smooth"})
+    }
+    else{
+      window.scrollTo({top: 2800, behavior: "smooth"})
+    }
+  }
+
     return(
     <>
         <div className="headerDiv">
             <nav className="navbar">
                 <ul>
-                <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
-                <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1000, behavior: "smooth"})}>About</a></li>
-                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1900, behavior: "smooth"})}>Projects</a></li>
-                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2900, behavior: "smooth"})}>Contact</a></li>
+                <li><a ref={home} className="nav-link scrollto active" onClick={scrollHome}>Home</a></li>
+                <li><a ref={about} className="nav-link scrollto" onClick={scrollAbout}>About</a></li>
+                <li><a ref={projects} className="nav-link scrollto" onClick={scrollProjects}>Projects</a></li>
+                <li><a ref={contact} className="nav-link scrollto" onClick={scrollContact}>Contact</a></li>
                 </ul>
             </nav>
             <ProgressBar className="progressNav" max="100"></ProgressBar>
