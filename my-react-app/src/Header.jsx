@@ -47,8 +47,8 @@ function Header(){
                 <ul>
                 <li><a ref={home} className="nav-link scrollto active" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Home</a></li>
                 <li><a ref={about} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1000, behavior: "smooth"})}>About</a></li>
-                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2000, behavior: "smooth"})}>Projects</a></li>
-                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 3000, behavior: "smooth"})}>Contact</a></li>
+                <li><a ref={projects} className="nav-link scrollto" onClick={() => window.scrollTo({top: 1900, behavior: "smooth"})}>Projects</a></li>
+                <li><a ref={contact} className="nav-link scrollto" onClick={() => window.scrollTo({top: 2900, behavior: "smooth"})}>Contact</a></li>
                 </ul>
             </nav>
             <ProgressBar className="progressNav" max="100"></ProgressBar>
