@@ -7,10 +7,10 @@ function Slide(props){
             <img src={props.imgName}></img>
             <h1 className={props.nameClass}>{props.name}</h1>
             <div className={props.iconClass}>
-                <img src="/public/reactIcon.PNG" style={{display:props.react}}></img>
-                <img src="/public/javascriptIcon.PNG" style={{display:props.js}}></img>
-                <img src="/public/htmlIcon.PNG" style={{display:props.html}}></img>
-                <img src="/public/cssIcon.PNG" style={{display:props.css}}></img>
+                <img src="/public/reactIcon.PNG" style={{display:props.react, zIndex:"0"}}></img>
+                <img src="/public/javascriptIcon.PNG" style={{display:props.js, zIndex:"0"}}></img>
+                <img src="/public/htmlIcon.PNG" style={{display:props.html, zIndex:"0"}}></img>
+                <img src="/public/cssIcon.PNG" style={{display:props.css, zIndex:"0"}}></img>
             </div>
       </>)}
      
