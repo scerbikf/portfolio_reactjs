@@ -42,7 +42,7 @@ a{
 }
 .navbar a{
   position: relative;
-  font-size: 16px;
+  font-size: 100%;
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -668,20 +668,17 @@ progress::-webkit-progress-value {
      opacity: 0;
      background: url("/public/background_mobile2.png") fixed center no-repeat;
      background-size: 100% 100vh;
-     z-index: 999;
+     z-index: 1;
      }
      100% {
       opacity: 1;
       background: url("/public/background_mobile2.png") fixed center no-repeat;
       background-size: 100% 100vh;
-      z-index: 999;
+      z-index: 1;
       }
    }
   .navbar{
     margin-left: 0%;
-  }
-  .navbar>ul>li{
-    padding: 0px 20px 0px 0px;
   }
   .name{
     font-size: 2.2rem;
@@ -695,7 +692,7 @@ progress::-webkit-progress-value {
   .homeDiv{
     opacity: 1;
     background: url("/public/background_mobile2.png") fixed center no-repeat;
-    z-index: 999;
+    z-index: 1;
     background-size: 100% 100vh;
     height: 900px;
   }
