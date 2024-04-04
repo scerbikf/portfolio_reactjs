@@ -42,7 +42,7 @@ a{
 }
 .navbar a{
   position: relative;
-  font-size: 100%;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -679,6 +679,13 @@ progress::-webkit-progress-value {
    }
   .navbar{
     margin-left: 0%;
+  }
+  .navbar a{
+    font-size: 13px;
+  }
+  .navbar>ul>li{
+    white-space: nowrap;
+    padding: 0px 20px 0px 0px;
   }
   .name{
     font-size: 2.2rem;
