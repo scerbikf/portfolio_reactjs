@@ -667,13 +667,13 @@ progress::-webkit-progress-value {
     0% {
      opacity: 0;
      background: url("/assets/background_mobile2-5YIHpYYO.PNG") fixed center no-repeat;
-     background-size: 100% 100%;
+     background-size: 50% 50%;
      z-index: 1;
      }
      100% {
       opacity: 1;
       background: url("/assets/background_mobile2-5YIHpYYO.PNG") fixed center no-repeat;
-      background-size: 100% 100%;
+      background-size: 50% 50%;
       z-index: 1;
       }
    }
@@ -697,8 +697,19 @@ progress::-webkit-progress-value {
     margin-bottom: 280px;
   }
   .homeDiv{
+    font-family: "Tusker Grotesk", sans-serif;
     background: url("/assets/background_mobile2-5YIHpYYO.PNG") fixed center no-repeat;
-    background-size: 100% 100%;
+    background-size: 50% 50%;
+    height: 900px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: fadeInHome ease 3s;
+    animation-iteration-count: 1;
+    z-index: 1;
   }
   .aboutDiv{
     height: 1200px;
@@ -739,7 +750,7 @@ progress::-webkit-progress-value {
     height: 16px;
   }
   .hrAbout{
-    top: 2150px;
+    top: 2050px;
     width: 70%;
   }
   .projectsTitleText{ 
@@ -799,7 +810,7 @@ progress::-webkit-progress-value {
       }
   }
   .hrProjects{
-    top: 2900px;
+    top: 2800px;
     width: 70%;
     margin-left: 15%;
   }
@@ -807,7 +818,7 @@ progress::-webkit-progress-value {
     margin: 0 20px;
   }
   .hrFooter{
-    top: 3605px;
+    top: 3505px;
     width: 70%;
   }
   .contactDiv{
