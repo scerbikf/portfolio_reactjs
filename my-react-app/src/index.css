@@ -668,13 +668,13 @@ progress::-webkit-progress-value {
      opacity: 0;
      background: url("/public/background_mobile2.png") fixed center no-repeat;
      background-size: 100% 100vh;
-     z-index: 1;
+     z-index: 999;
      }
      100% {
       opacity: 1;
       background: url("/public/background_mobile2.png") fixed center no-repeat;
       background-size: 100% 100vh;
-      z-index: 1;
+      z-index: 999;
       }
    }
   .navbar{
@@ -693,7 +693,9 @@ progress::-webkit-progress-value {
     margin-bottom: 180px;
   }
   .homeDiv{
+    opacity: 1;
     background: url("/public/background_mobile2.png") fixed center no-repeat;
+    z-index: 999;
     background-size: 100% 100vh;
     height: 900px;
   }
@@ -722,7 +724,7 @@ progress::-webkit-progress-value {
     margin-bottom: 50px;
   }
   .projectsDiv{
-    height: 770px;
+    height: 700px;
   }
   .skillsDiv{
     font-size: 1rem;
@@ -743,7 +745,7 @@ progress::-webkit-progress-value {
     margin: 0px auto 50px auto;
   }
   .swiper{
-    width: 100%;
+    width: 90%;
   }
   .swiper-slide {
     width: 250px;
@@ -795,7 +797,7 @@ progress::-webkit-progress-value {
       }
   }
   .hrProjects{
-    top: 2870px;
+    top: 2800px;
     width: 70%;
     margin-left: 15%;
   }
@@ -803,7 +805,7 @@ progress::-webkit-progress-value {
     margin: 0 20px;
   }
   .hrFooter{
-    top: 3575px;
+    top: 3505px;
     width: 70%;
   }
   .contactDiv{
