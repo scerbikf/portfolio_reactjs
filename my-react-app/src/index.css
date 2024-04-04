@@ -680,13 +680,23 @@ progress::-webkit-progress-value {
     font-size: 2.2rem;
     width: 310px;
     margin-bottom: 200px;
+    animation: none;
   }
   .autoText{
     font-size: 1.4rem;
     margin-bottom: 280px;
+    animation: none;
+  }
+  .homeDiv{
+    height: 900px;
+    background: none;
   }
   .backgroundMobile{
     visibility: visible;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
   }
   .aboutDiv{
     height: 1200px;
