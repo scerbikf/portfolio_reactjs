@@ -754,6 +754,7 @@ progress::-webkit-progress-value {
   .swiper-slide {
     width: 250px;
     height: 250px;
+    z-index: 1;
   }
   .slideDown, .slideUp{
     font-size: 30px;
