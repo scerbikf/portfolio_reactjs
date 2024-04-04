@@ -11,7 +11,7 @@ return(<footer className="footerDiv">
         <hr className="hrFooter"></hr>
         <ul className="iconsList">
             <li>
-                <a className="facebook" href="#">
+                <a className="facebook" href="https://www.facebook.com/filip.scerbik/" target="_blank">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -20,7 +20,7 @@ return(<footer className="footerDiv">
                 </a>
             </li>
             <li>
-                <a className="twitter" href="#">
+                <a className="twitter" href="https://www.linkedin.com/in/filip-%C5%A1%C4%8Derb%C3%ADk-6a7421265/" target="_blank">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -29,7 +29,7 @@ return(<footer className="footerDiv">
                 </a>
             </li>
             <li>
-                <a className="instagram" href="#">
+                <a className="instagram" href="https://www.instagram.com/scerbikf/" target="_blank">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -38,7 +38,7 @@ return(<footer className="footerDiv">
                 </a>
             </li>
             <li>
-                <a className="google" href="#">
+                <a className="google" href="https://github.com/scerbikf" target="_blank">
                     <span></span>
                     <span></span>
                     <span></span>
