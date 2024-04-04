@@ -679,16 +679,16 @@ progress::-webkit-progress-value {
   .name{
     font-size: 2.2rem;
     width: 310px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     animation: none;
   }
   .autoText{
     font-size: 1.4rem;
-    margin-bottom: 280px;
+    margin-bottom: 180px;
     animation: none;
   }
   .homeDiv{
-    height: 900px;
+    height: 800px;
     background: none;
   }
   .backgroundMobile{
@@ -737,7 +737,7 @@ progress::-webkit-progress-value {
     height: 16px;
   }
   .hrAbout{
-    top: 2050px;
+    top: 1950px;
     width: 70%;
   }
   .projectsTitleText{ 
@@ -797,7 +797,7 @@ progress::-webkit-progress-value {
       }
   }
   .hrProjects{
-    top: 2800px;
+    top: 2700px;
     width: 70%;
     margin-left: 15%;
   }
@@ -805,7 +805,7 @@ progress::-webkit-progress-value {
     margin: 0 20px;
   }
   .hrFooter{
-    top: 3505px;
+    top: 3405px;
     width: 70%;
   }
   .contactDiv{
