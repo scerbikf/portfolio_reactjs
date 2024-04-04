@@ -277,7 +277,6 @@ progress::-webkit-progress-value {
   animation-iteration-count: 1;
 }
 .iconsDown{
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,10 +287,8 @@ progress::-webkit-progress-value {
   animation: 1s slideLeftIcons2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  z-index: 0;
 }
 .iconsUp{
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,7 +299,6 @@ progress::-webkit-progress-value {
   animation: 1s slideRightIcons2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  z-index: 0;
 }
 .contactDiv{
   display: flex;
