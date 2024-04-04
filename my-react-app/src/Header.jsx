@@ -55,7 +55,7 @@ function Header(){
 
   const scrollProjects = () => {
     if(window.innerWidth > 1100){
-      window.scrollTo({top: 1800, behavior: "smooth"})
+      window.scrollTo({top: 1900, behavior: "smooth"})
     }
     else{
       window.scrollTo({top: 1950, behavior: "smooth"})
