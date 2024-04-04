@@ -690,19 +690,13 @@ progress::-webkit-progress-value {
   .name{
     font-size: 2.2rem;
     width: 310px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .autoText{
     font-size: 1.4rem;
-    margin-bottom: 180px;
+    margin-bottom: 280px;
   }
-  .homeDiv{
-    opacity: 1;
-    background: url("/public/background_mobile2.png") fixed center no-repeat;
-    z-index: 1;
-    background-size: 100% 100vh;
-    height: 900px;
-  }
+  
   .aboutDiv{
     height: 1200px;
     margin: 50px 0px 0px 0px;
