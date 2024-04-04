@@ -679,11 +679,12 @@ progress::-webkit-progress-value {
   .name{
     font-size: 2rem;
     width: 270px;
+    margin-bottom: 80px;
     animation: none;
   }
   .autoText{
     font-size: 1.2rem;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     animation: none;
   }
   .homeDiv{
@@ -693,7 +694,7 @@ progress::-webkit-progress-value {
   .backgroundMobile{
     visibility: visible;
     width: 100%;
-    height: 900px;
+    height: 800px;
     position: fixed;
     top: 0px;
   }
