@@ -17,7 +17,7 @@ function About(){
 
         if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA, barSQL) {
           const active = () => {
-            if(window.innerWidth > 1100 ? window.scrollY > 600 : window.scrollY > 1300){
+            if(window.innerWidth > 1100 ? window.scrollY > 600 : window.scrollY > 1100){
                 barHTML.current.style.width = "95%"
                 barCSS.current.style.transition = "1.5s 0.4s width ease-in-out"
                 barCSS.current.style.width = "95%"
