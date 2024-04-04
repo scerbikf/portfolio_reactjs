@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 function Home(){
 
     return(<div className="homeDiv">
+        <img src="/public/background_pc.PNG" className="backgroundMobile"></img>
                 <h1 className="name">I am Filip Ščerbík</h1>
                 <h1 className="autoText">
                     <Typewriter
