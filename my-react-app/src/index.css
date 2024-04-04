@@ -739,14 +739,14 @@ progress::-webkit-progress-value {
     height: 16px;
   }
   .hrAbout{
-    top: 2050px;
+    top: 2150px;
     width: 70%;
   }
   .projectsTitleText{ 
     margin: 0px auto 50px auto;
   }
   .swiper{
-    width: 90%;
+    width: 100%;
   }
   .swiper-slide {
     width: 250px;
@@ -799,7 +799,7 @@ progress::-webkit-progress-value {
       }
   }
   .hrProjects{
-    top: 2800px;
+    top: 2900px;
     width: 70%;
     margin-left: 15%;
   }
@@ -807,7 +807,7 @@ progress::-webkit-progress-value {
     margin: 0 20px;
   }
   .hrFooter{
-    top: 3505px;
+    top: 3605px;
     width: 70%;
   }
   .contactDiv{
