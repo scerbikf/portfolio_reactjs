@@ -286,6 +286,7 @@ progress::-webkit-progress-value {
   margin: 0px 0px 0px 0px;
   animation: 1s slideLeftIcons2;
   animation-fill-mode: forwards;
+  visibility: hidden;
   animation-iteration-count: 1;
 }
 .iconsUp{
@@ -298,6 +299,7 @@ progress::-webkit-progress-value {
   margin: 0px 0px 0px 0px;
   animation: 1s slideRightIcons2;
   animation-fill-mode: forwards;
+  visibility: hidden;
   animation-iteration-count: 1;
 }
 .contactDiv{
@@ -770,6 +772,7 @@ progress::-webkit-progress-value {
       margin-left: 0px;
       margin-top: -140px;
       position: relative;
+      visibility: visible;
       z-index: 0;
       }
      100% {
@@ -777,6 +780,7 @@ progress::-webkit-progress-value {
       margin-left: -50px;
       margin-top: -200px;
       position: relative;
+      visibility: visible;
       z-index: 0;
       }
   }
