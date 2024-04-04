@@ -11,25 +11,25 @@ function Header(){
   useEffect(() => {
     
       const active = () => {
-        if (window.innerWidth > 1100 ? window.scrollY < 600 : window.scrollY < 700){
+        if (window.scrollY < 600){
           home.current.classList.add("active")
           about.current.classList.remove("active")
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.innerWidth > 1100 ? window.scrollY > 600 && window.scrollY < 1600 : window.scrollY > 700 && window.scrollY < 2000){
+        else if(window.innerWidth > 1100 ? window.scrollY > 600 && window.scrollY < 1600 : window.scrollY > 600 && window.scrollY < 1900){
           about.current.classList.add("active")
           home.current.classList.remove("active")
           projects.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.innerWidth > 1100 ? window.scrollY > 1500 && window.scrollY < 2530 : window.scrollY > 2000 && window.scrollY < 2700){
+        else if(window.innerWidth > 1100 ? window.scrollY > 1500 && window.scrollY < 2530 : window.scrollY > 1900 && window.scrollY < 2600){
           projects.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
           contact.current.classList.remove("active")
         }
-        else if(window.innerWidth > 1100 ? window.scrollY > 2430 : window.scrollY > 2700){
+        else if(window.innerWidth > 1100 ? window.scrollY > 2430 : window.scrollY > 2600){
           contact.current.classList.add("active")
           home.current.classList.remove("active")
           about.current.classList.remove("active")
@@ -49,7 +49,7 @@ function Header(){
       window.scrollTo({top: 1000, behavior: "smooth"})
     }
     else{
-      window.scrollTo({top: 950, behavior: "smooth"})
+      window.scrollTo({top: 850, behavior: "smooth"})
     }
   }
 
@@ -58,7 +58,7 @@ function Header(){
       window.scrollTo({top: 1900, behavior: "smooth"})
     }
     else{
-      window.scrollTo({top: 2150, behavior: "smooth"})
+      window.scrollTo({top: 2050, behavior: "smooth"})
     }
   }
 
@@ -67,7 +67,7 @@ function Header(){
       window.scrollTo({top: 2900, behavior: "smooth"})
     }
     else{
-      window.scrollTo({top: 2900, behavior: "smooth"})
+      window.scrollTo({top: 2800, behavior: "smooth"})
     }
   }
 
