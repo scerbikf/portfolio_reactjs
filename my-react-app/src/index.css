@@ -836,4 +836,7 @@ progress::-webkit-progress-value {
   .formDiv{
     width: 90%;
   }
+  .submitBtn.activeBtn{
+    margin-right: 40px;
+  }
 }
