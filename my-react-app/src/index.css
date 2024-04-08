@@ -385,30 +385,21 @@ progress::-webkit-progress-value {
   cursor: pointer;
   overflow: hidden;
   margin: 2px 0px 0px auto;
-  padding-top: 8px;
+  padding-top: 3px;
   transition: 0.3s;
 }
 .submitBtn:hover{
   background: #131313;
   color: #f5e5d4;
 }
-.success{
-  margin-top: 50%;
-}
 .submitBtn.activeBtn{
   width: 40px;
-  margin-left: 340px;
   background: #f5e5d448;
+  color: #f5e5d4;
+  padding-top: 5px;
 }
 .submitBtn.activeBtn:hover{
   background: #131313;
-}
-.submitBtn.activeBtn span{
-  display: none;
-}
-.submitBtn.activeBtn .success{
-  transform: translateY(-50%);
-  color: #f5e5d4;
 }
 .footerDiv{
   font-family: "Tusker Grotesk", sans-serif;
@@ -844,8 +835,5 @@ progress::-webkit-progress-value {
   }
   .formDiv{
     width: 90%;
-  }
-  .submitBtn.activeBtn{
-    margin-left: 115px;
   }
 }

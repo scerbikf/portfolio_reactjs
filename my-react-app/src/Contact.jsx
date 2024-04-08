@@ -28,19 +28,21 @@ function Contact(){
       );
   };
 
-          const checkBtn = (e) => {
+    const checkBtn = (e) => {
 
-            e.preventDefault();
+      e.preventDefault();
 
-            if(!isActiveBtn){
-              submitBtn.current.classList.add("activeBtn")
-              setisActiveBtn(!isActiveBtn)
-              sendEmail(e)
-            }else if(isActiveBtn){
-              submitBtn.current.classList.remove("activeBtn")
-              setisActiveBtn(!isActiveBtn)
-            }
-          }
+      if(!isActiveBtn){
+        submitBtn.current.classList.add("activeBtn")
+        setisActiveBtn(!isActiveBtn)
+        sendEmail(e)
+      }else if(isActiveBtn){
+        submitBtn.current.classList.remove("activeBtn")
+        setisActiveBtn(!isActiveBtn)
+      }
+    }
+
+    const textBtn = isActiveBtn ? <FaCheck /> : "Submit"
     
     return(<>
     <div className="contactDiv">
@@ -64,10 +66,7 @@ function Contact(){
                   <a className="mailIcon" href="mailto:filipscerbik@gmail.com"><HiOutlineMail /></a>
                   <a className="mailText" href="mailto:filipscerbik@gmail.com">filipscerbik@gmail.com</a>
                   <button className="submitBtn" ref={submitBtn}>  
-                  <span>Submit</span>
-                  <div className="success">
-                    <FaCheck />
-                  </div>
+                    <span>{textBtn}</span>
                   </button>
                 </div>
               </form>
