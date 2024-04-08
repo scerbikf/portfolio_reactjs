@@ -837,6 +837,8 @@ progress::-webkit-progress-value {
     width: 90%;
   }
   .submitBtn.activeBtn{
-    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
