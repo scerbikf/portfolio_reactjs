@@ -396,7 +396,7 @@ progress::-webkit-progress-value {
   width: 40px;
   background: #f5e5d448;
   color: #f5e5d4;
-  padding-top: 5px;
+  padding: 5px auto 0px auto;
 }
 .submitBtn.activeBtn:hover{
   background: #131313;
