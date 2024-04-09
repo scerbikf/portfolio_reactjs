@@ -64,7 +64,7 @@ function Contact(){
                 </div>
                 <div className="contactItems">
                   <a className="mailIcon" href="mailto:filipscerbik@gmail.com"><HiOutlineMail /></a>
-                  <a className="mailText" href="mailto:filipscerbik@gmail.com">filipscerbik@gmail.com</a>
+                  <a className="mailText" href="mailto:filipscerbik@gmail.com">filipscerbik487@gmail.com</a>
                   <button className="submitBtn" ref={submitBtn}>  
                     <span>{textBtn}</span>
                   </button>
