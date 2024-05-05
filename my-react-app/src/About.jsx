@@ -6,8 +6,9 @@ function About(){
     const barHTML = useRef(null);
     const barCSS = useRef(null);
     const barJS = useRef(null);
+    const barTW = useRef(null);
+    const barBT = useRef(null);
     const barREACT = useRef(null);
-    const barNODE = useRef(null);
     const barPHP = useRef(null);
     const barPYTHON = useRef(null);
     const barJAVA = useRef(null);
@@ -15,7 +16,7 @@ function About(){
 
     useEffect(() => {
 
-        if(barHTML, barCSS, barJS, barREACT, barNODE, barPHP, barPYTHON, barJAVA, barSQL) {
+        if(barHTML, barCSS, barJS, barTW, barBT, barREACT, barPHP, barPYTHON, barJAVA, barSQL) {
           const active = () => {
             if(window.innerWidth > 1100 ? window.scrollY > 600 : window.scrollY > 1100){
                 barHTML.current.style.width = "95%"
@@ -23,17 +24,19 @@ function About(){
                 barCSS.current.style.width = "95%"
                 barJS.current.style.transition = "1.5s 0.6s width ease-in-out"
                 barJS.current.style.width = "95%"
-                barREACT.current.style.transition = "1.5s 0.8s width ease-in-out"
+                barTW.current.style.transition = "1.5s 0.8s width ease-in-out"
+                barTW.current.style.width = "90%"
+                barBT.current.style.transition = "1.5s 1s width ease-in-out"
+                barBT.current.style.width = "90%"
+                barREACT.current.style.transition = "1.5s 1.2s width ease-in-out"
                 barREACT.current.style.width = "85%"
-                barNODE.current.style.transition = "1.5s 1s width ease-in-out"
-                barNODE.current.style.width = "75%"
-                barPHP.current.style.transition = "1.5s 1.2s width ease-in-out"
+                barPHP.current.style.transition = "1.5s 1.4s width ease-in-out"
                 barPHP.current.style.width = "50%"
-                barPYTHON.current.style.transition = "1.5s 1.4s width ease-in-out"
+                barPYTHON.current.style.transition = "1.5s 1.6s width ease-in-out"
                 barPYTHON.current.style.width = "50%"
-                barJAVA.current.style.transition = "1.5s 1.6s width ease-in-out"
+                barJAVA.current.style.transition = "1.5s 1.8s width ease-in-out"
                 barJAVA.current.style.width = "40%"
-                barSQL.current.style.transition = "1.5s 1.6s width ease-in-out"
+                barSQL.current.style.transition = "1.5s 2s width ease-in-out"
                 barSQL.current.style.width = "30%"
             }
           }
@@ -69,16 +72,22 @@ function About(){
                             <div className="progress">
                                 <div ref={barJS} className="progress-bar2"></div>                       
                             </div> 
-                    
+
+                            <p>Tailwind</p> 
+                            <div className="progress">
+                                <div ref={barTW} className="progress-bar2"></div>                       
+                            </div>
+
+                            <p>Bootstrap</p> 
+                            <div className="progress">
+                                <div ref={barBT} className="progress-bar2"></div>                       
+                            </div>
+
                             <p>ReactJS</p> 
                             <div className="progress">
                                 <div ref={barREACT} className="progress-bar2"></div>                       
                             </div> 
 
-                            <p>Node.js</p> 
-                            <div className="progress">
-                                <div ref={barNODE} className="progress-bar2"></div>                       
-                            </div>
 
                             <p>PHP</p> 
                             <div className="progress">
