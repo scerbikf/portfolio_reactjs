@@ -636,7 +636,6 @@ progress::-webkit-progress-value {
   .name{
     font-size: 2rem;
     margin-bottom: 100px;
-    
   }
   .autoText{
     font-size: 1.2rem;
@@ -725,7 +724,7 @@ progress::-webkit-progress-value {
       }
      100% {
       opacity: 1;
-      margin-left: 15%;
+      margin-left: 13%;
       }
   }
   @keyframes slideDown {

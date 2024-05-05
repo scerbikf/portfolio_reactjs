@@ -54,7 +54,7 @@ function About(){
                             <p className="aboutMeText">
                                 Im Frontend & Freelance web developer from Trebisov, Slovakia.
                                 I intend to improve everyday and collect new experience and skills everywhere i possibly can.
-                                Im self-taught programmer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
+                                Im self-taught developer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
                             </p>
                         </div>
                     <div className="skillsDiv">
