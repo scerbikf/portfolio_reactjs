@@ -25,14 +25,14 @@ function About(){
                 barCSS.current.style.width = "95%"
                 barJS.current.style.transition = "1.5s 0.6s width ease-in-out"
                 barJS.current.style.width = "95%"
-                barSASS.current.style.transition = "1.5s 0.6s width ease-in-out"
-                barSASS.current.style.width = "90%"
-                barTW.current.style.transition = "1.5s 1s width ease-in-out"
-                barTW.current.style.width = "90%"
-                barBT.current.style.transition = "1.5s 1.2s width ease-in-out"
-                barBT.current.style.width = "90%"
-                barREACT.current.style.transition = "1.5s 1.4s width ease-in-out"
-                barREACT.current.style.width = "85%"
+                barREACT.current.style.transition = "1.5s 0.8s width ease-in-out"
+                barREACT.current.style.width = "90%"
+                barSASS.current.style.transition = "1.5s 1s width ease-in-out"
+                barSASS.current.style.width = "85%"
+                barTW.current.style.transition = "1.5s 1.2s width ease-in-out"
+                barTW.current.style.width = "80%"
+                barBT.current.style.transition = "1.5s 1.4s width ease-in-out"
+                barBT.current.style.width = "80%"
                 barPHP.current.style.transition = "1.5s 1.6s width ease-in-out"
                 barPHP.current.style.width = "75%"
                 barSQL.current.style.transition = "1.5s 1.8s width ease-in-out"
@@ -76,6 +76,11 @@ function About(){
                                 <div ref={barJS} className="progress-bar2"></div>                       
                             </div> 
 
+                            <p>ReactJS</p> 
+                            <div className="progress">
+                                <div ref={barREACT} className="progress-bar2"></div>                       
+                            </div> 
+
                             <p>SASS</p>  
                             <div className="progress">
                                 <div ref={barSASS} className="progress-bar2"></div>                       
@@ -90,11 +95,6 @@ function About(){
                             <div className="progress">
                                 <div ref={barBT} className="progress-bar2"></div>                       
                             </div>
-
-                            <p>ReactJS</p> 
-                            <div className="progress">
-                                <div ref={barREACT} className="progress-bar2"></div>                       
-                            </div> 
 
                             <p>PHP</p> 
                             <div className="progress">
