@@ -822,7 +822,7 @@ progress::-webkit-progress-value {
       }
      100% {
       opacity: 1;
-      margin-left: 0%;
+      margin-left: 3%;
       }
   }
 }
