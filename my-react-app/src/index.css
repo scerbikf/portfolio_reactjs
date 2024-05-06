@@ -814,3 +814,15 @@ progress::-webkit-progress-value {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 400px){
+  @keyframes slideLeftNav {
+    0% {
+      opacity: 0;
+      margin-left: 100%;
+      }
+     100% {
+      opacity: 1;
+      margin-left: 10%;
+      }
+  }
+}
