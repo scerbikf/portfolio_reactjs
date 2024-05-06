@@ -55,7 +55,7 @@ function About(){
                             <img src="/public/profile2.jpg" alt="profile" className="profile" />
                             <p className="whoAmI">So, who am I?</p>
                             <p className="aboutMeText">
-                                Im Frontend & Freelance web developer from Trebisov, Slovakia.
+                                Im Fullstack & Freelance web developer from Trebisov, Slovakia.
                                 I intend to improve everyday and collect new experience and skills everywhere i possibly can.
                                 Im self-taught developer with 2 years of learning mainly ReactJS, JavaScript, HTML and CSS.
                             </p>
